@@ -3,13 +3,14 @@ import React from "react";
 // import BottomNavbar from "../components/bottomNavbar";
 import Navbar from "../components/navbar";
 import initMap from "../components/maps";
+import banner from "../assets/images/banner.jpg";
 
 const MainPage = () => {
   initMap()
   return (
     <div className="main-page">
       <header>
-        <h1>KALIMANTAN BARAT</h1>
+        <img src={banner} />
       </header>
       <div id="weatherData"></div>
 
