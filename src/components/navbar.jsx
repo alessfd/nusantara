@@ -4,7 +4,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="nav">
+    <nav class="nav">
       <Link to="/" className="siteName">
         KalBar
       </Link>
