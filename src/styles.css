@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 * {
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -16,7 +21,7 @@ body {
 }
 
 .nav {
-  background-color: #333;
+  background-color: rgb(25, 30, 37);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -40,6 +45,10 @@ body {
   display: flex;
   align-items: center;
   padding: 0.25rem;
+}
+
+.nav li{
+  border-radius: 4px;
 }
 
 .nav li.active {
