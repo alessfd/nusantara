@@ -10,11 +10,13 @@ import mountainIcon from '../assets/icons/mountainIcon.svg'
 import beachIcon from '../assets/icons/beachIcon.svg'
 import bookIcon from '../assets/icons/bookIcon.svg'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import React from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const wisata = [
-  { name: 'Gunung', description: 'Get a better understanding of your traffic', href: '#', icon: mountainIcon },
-  { name: 'Pantai', description: 'Speak directly to your customers', href: '#', icon: beachIcon },
-  { name: 'Tempat Bersejarah', description: 'Your customers’ data will be safe and secure', href: '#', icon: bookIcon },
+  { name: 'Gunung', to: '/gunung', icon: mountainIcon },
+  { name: 'Pantai', to: '/pantai', icon: beachIcon },
+  { name: 'Situs Bersejarah', to: '/situs-bersejarah', icon: bookIcon },
 ]
 
 function classNames(...classes) {
@@ -26,11 +28,11 @@ export default function Navbar() {
 
   return (
     <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-2 flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <span className="text-2xl font-bold">KalBar</span>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -43,6 +45,10 @@ export default function Navbar() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
+          <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">
+            Home
+          </Link>
+
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Wisata
@@ -58,7 +64,7 @@ export default function Navbar() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-24 w-72 top-full z-10 mt-3 max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {wisata.map((item) => (
                     <div
@@ -69,10 +75,10 @@ export default function Navbar() {
                         <img src={item.icon} className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <Link to={item.to} className="block font-semibold text-gray-900">
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -80,24 +86,19 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
-          </a>
+
+          <Link to="/about-us" className="text-sm font-semibold leading-6 text-gray-900">
+            About Us
+          </Link>
         </Popover.Group>
       </nav>
       <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="text-2xl font-bold">KalBar</span>
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -110,6 +111,10 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
+                <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                  Home
+                </Link>
+
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
@@ -122,37 +127,23 @@ export default function Navbar() {
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
                         {[...wisata].map((item) => (
-                          <Disclosure.Button
+                          <Link
                             key={item.name}
-                            as="a"
-                            href={item.href}
+                            to={item.to}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
-                          </Disclosure.Button>
+                          </Link>
                         ))}
                       </Disclosure.Panel>
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </a>
+
+                <Link to="/about-us" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                  About Us
+                </Link>
+                
               </div>
             </div>
           </div>
@@ -160,4 +151,17 @@ export default function Navbar() {
       </Dialog>
     </header>
   )
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+  return (
+    <a className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </a>
+  );
 }
