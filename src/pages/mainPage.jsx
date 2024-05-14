@@ -33,7 +33,7 @@ const MainPage = () => {
       </div>
 
       <div>
-        <div id="map"></div>
+        <div id="map" className="w-full"></div>
       </div>
 
       {/* <div className="map-api"></div>
