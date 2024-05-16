@@ -9,19 +9,25 @@ const MainPage = () => {
   initMap()
   return (
     <div className="main-page">
-      <header>
-        <img src={banner} />
-      </header>
+      <div className="relative w-screen">
+        <img src={banner}
+        className="object-fill"
+        />
+        <div className="absolute inset-y-1/2 translate-y-1/2 w-screen">
+          <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider font-semibold">Explore the Beauty of Kalimantan Barat</h1>
+        </div>
+        
+      </div>
       <div id="weatherData"></div>
 
       <div>
-        <h2 className="">Explore the Beauty of Kalimantan Barat</h2>
+        
       </div>
       <div className="destinasi">
         <div className="wisata">
           <h2>Pantai</h2>
           <div className="gambarWisata">
-            <img src={"../assests/pantai/pantai-batu-nenek.jpg"}/>
+            <img src={"../assets/pantai/pantai-batu-nenek.jpg"}/>
           </div>
         </div>
         <div className="wisata">

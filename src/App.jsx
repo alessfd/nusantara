@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="object-cover">
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about-us" element={<AboutUs />} />

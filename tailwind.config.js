@@ -4,18 +4,17 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
   content: ["./index.html", 
-            "./src/**/*/.{jsx,tsx,js,ts}",
-            "./src/app.jsx",
-            "./src/main.jsx",
-            "./src/components/main.jsx",
-            "./src/components/navbar.jsx",
-            "./src/components/person.jsx",
-            "./src/components/maps.jsx",
-            "./src/components/weather.js"],
+            "./src/**/*.{jsx,tsx,js,ts}",
+            "./src/*.{jsx,tsx,js,ts}"],
   theme: {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+	      banner: ['Josefin Sans', ...defaultTheme.fontFamily.sans],
+      },
+      dropShadow: {
+        'banner': '2px 2px 0.5px rgba(0, 0, 0, 0.6)',
+        'bannerlg': '4px 4px 1px rgba(0, 0, 0, 0.6)',
       },
     },
   },
