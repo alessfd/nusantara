@@ -27,8 +27,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
-      <nav className="mx-2 flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className="bg-lime-50">
+      <nav className="mx-2 flex items-center w-screen justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="text-2xl font-bold">KalBar</span>
