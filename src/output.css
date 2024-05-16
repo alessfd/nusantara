@@ -782,12 +782,20 @@ video {
   top: 100%;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-50 {
@@ -808,6 +816,10 @@ video {
 
 .z-\[999\] {
   z-index: 999;
+}
+
+.z-100 {
+  z-index: 100;
 }
 
 .-m-1 {
@@ -6187,11 +6199,6 @@ video {
 
   .\32xl\:max-w-\[75\%\] {
     max-width: 75%;
-  }
-
-  .\32xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 }
 

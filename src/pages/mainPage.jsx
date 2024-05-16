@@ -9,17 +9,18 @@ const MainPage = () => {
   initMap()
   return (
     <div className="main-page">
-      <div className="relative w-screen">
+      <div className="relative w-screen z-10">
         <img src={banner}
         className="object-fill"
         />
-        <div className="absolute inset-y-1/2 translate-y-1/2 w-screen">
-          <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider font-semibold">Explore the Beauty of Kalimantan Barat</h1>
-        </div>
-        
+
+        <div className="absolute inset-y-1/2 translate-y-1/2 w-screen z-10">
+          <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
+            Explore the Beauty of Kalimantan Barat
+          </h1>
+        </div>        
       </div>
       <div id="weatherData"></div>
-
       <div>
         
       </div>

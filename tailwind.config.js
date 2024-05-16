@@ -16,6 +16,9 @@ module.exports = withMT({
         'banner': '2px 2px 0.5px rgba(0, 0, 0, 0.6)',
         'bannerlg': '4px 4px 1px rgba(0, 0, 0, 0.6)',
       },
+      zIndex: {
+        '100': '100',
+      },
     },
   },
   plugins: [],
