@@ -15,7 +15,7 @@ const MainPage = () => {
       <div id="weatherData"></div>
 
       <div>
-        <h2>Explore the Beauty of Kalimantan Barat</h2>
+        <h2 className="">Explore the Beauty of Kalimantan Barat</h2>
       </div>
       <div className="destinasi">
         <div className="wisata">
