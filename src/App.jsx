@@ -16,8 +16,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <div className="container">
+      <header>
+        <Navbar />
+      </header>
+      <div className="bg-lime-50">
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -26,7 +28,9 @@ function App() {
           <Route path="/situs-bersejarah" element={<Heritage />} />
         </Routes>
       </div>
-      <Copyright /> 
+      <footer>
+        <Copyright /> 
+      </footer>
 
 
       {/* <div id="weatherData"></div> */}

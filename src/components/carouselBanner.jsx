@@ -1,6 +1,6 @@
 import { Carousel } from "@material-tailwind/react";
 
-export function CarouselCustomNavigation({ images }) {
+export function CarouselBannerCustomNavigation({ images }) {
   return (
     <Carousel
       className="rounded-x"
@@ -25,7 +25,7 @@ export function CarouselCustomNavigation({ images }) {
         <img
           key={index}
           src={src}
-          className="w-1/2 h-36 object-cover"
+          className="w-full"
         />
       ))}
     </Carousel>

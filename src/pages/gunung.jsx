@@ -1,5 +1,6 @@
 import React from "react";
 import { CarouselCustomNavigation } from "../components/carousel"
+import { CarouselBannerCustomNavigation } from "../components/carouselBanner"
 import bawang1 from '../assets/gunung/bawang1.jpg'
 import bawang2 from '../assets/gunung/bawang2.jpg'
 import raya1 from '../assets/gunung/bukit-raya1.jpeg'
@@ -31,7 +32,7 @@ const Gunung = () => {
   return (
     <div>
       <div className="text-overlay bg-black h-16 sm:h-36 w-screen">
-        <CarouselCustomNavigation images={imgBanner}/>
+        <CarouselBannerCustomNavigation images={imgBanner}/>
       </div>
       <div>
         <div className="flex justify-start">

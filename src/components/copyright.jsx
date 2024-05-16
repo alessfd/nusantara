@@ -4,7 +4,7 @@ const Copyright = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div className="bg-lime-50 text-red py-4 text-center">
+        <div className="text-red py-4 text-center w-full bottom-0 absolute">
         <p>&copy; {currentYear} KalBar Website. All rights reserved.</p>
         </div>
     );

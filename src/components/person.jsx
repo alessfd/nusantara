@@ -1,8 +1,12 @@
 import React from "react";
 
-const Person = ({ name, nim }) => {
+const Person = ({ images, name, nim }) => {
   return (
-    <div className="person">
+    <div className="flex flex-col">
+      <img
+      src={images}
+      className="w-48"
+      />
       <h2>{name}</h2>
       <h3>{nim}</h3>
     </div>
