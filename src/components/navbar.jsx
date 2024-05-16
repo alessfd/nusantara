@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-lime-50">
-      <nav className="m-0 flex items-center w-full justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="sticky top-0 m-0 flex items-center w-full justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="text-2xl font-bold">KalBar</span>
