@@ -88,7 +88,7 @@ const Pantai = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJSeQn6AD_zC0RhPk7W66aVjQ" className="flex">
+              <Link to="/info/ChIJy0TS2v0K4zERSU_IESXGn6U" className="flex">
                 PANTAI KURA-KURA
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
