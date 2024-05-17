@@ -12,6 +12,7 @@ import bookIcon from '../assets/icons/bookIcon.svg'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import logo from '../assets/images/logo.png';
 
 const wisata = [
   { name: 'Gunung', to: '/gunung', icon: mountainIcon },
@@ -43,7 +44,10 @@ export default function Navbar() {
     <header className="sticky top-0 z-100 bg-white w-full">
       <nav className="m-0 flex items-center w-full justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5 flex">
+            <img src={logo} 
+            className='w-8 mr-3 -mt-1'
+            />
             <span className="text-2xl font-bold">KalBar</span>
           </Link>
         </div>
