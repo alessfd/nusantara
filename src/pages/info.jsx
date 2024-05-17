@@ -10,6 +10,7 @@ import kelam1 from '../assets/gunung/kelam1.webp'
 import niut1 from '../assets/gunung/niut1.webp'
 import niut2 from '../assets/gunung/niut2.jpg'
 import { useParams } from "react-router-dom";
+import FetchWeatherData from "../components/weather"
 
 // const id = "ChIJfbK2kZJI4zER_2Z0sRKaMPU"
 
@@ -17,8 +18,13 @@ const Info = () => {
   const { id } = useParams();
   console.log("id: "+id);
   return (
-    <SearchPlace placeId={id} />  
+    <>
+      <SearchPlace placeId={id} />
+    </>
+    
   ); 
 };
+
+
 
 export default Info;

@@ -7,7 +7,6 @@ import Gunung from './pages/gunung';
 import Heritage from './pages/heritage';
 import Info from './pages/info';
 import { Route, Routes } from "react-router-dom";
-import { Loader } from "@googlemaps/js-api-loader"
 import Copyright from './components/copyright';
 // import './App.css'
 import './index.css'
@@ -17,28 +16,26 @@ function App() {
 
   return (
     <>
-      <div className="hover:scrollbar-thumb-slate-700 active:scrollbar-thumb-slate-700 h-screen scrollbar scrollbar-thumb-slate-700 overflow-y-scroll">
+      <div className="hover:scrollbar-thumb-teal-800 active:scrollbar-thumb-teal-700 h-screen scrollbar scrollbar-thumb-teal-900 overflow-y-scroll">
         <Navbar />
-        <div className='h-full'>
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/pantai" element={<Pantai />} />
-            <Route path="/gunung" element={<Gunung />} />
-            <Route path="/situs-bersejarah" element={<Heritage />} />
-            <Route path="/info" element={<Info />}>
-              <Route path=":id" />
-            </Route>
-          </Routes>
-        </div>
-        <footer className='bottom-0'>
-          <Copyright /> 
-        </footer>
+
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/pantai" element={<Pantai />} />
+          <Route path="/gunung" element={<Gunung />} />
+          <Route path="/situs-bersejarah" element={<Heritage />} />
+          <Route path="/info" element={<Info />}>
+            <Route path=":id" />
+          </Route>
+        </Routes>
+
+        <Copyright /> 
 
 
-      {/* <div id="weatherData"></div> */}
-    </div>
-  </>
+        {/* <div id="weatherData"></div> */}
+      </div>
+    </>
   )
 }
 

@@ -12,7 +12,6 @@ import tuguPoster from "../assets/images/tuguBanner.jpg";
 
 
 const MainPage = () => {
-  initMap()
   return (
     <div className="main-page h-full">
       <div className="relative sm:h-5/6 lg:h-fit inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10 rounded-xl">

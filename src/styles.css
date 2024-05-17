@@ -6,6 +6,10 @@ body {
   overflow-y: auto;
 }
 
+html, body {
+  overflow: auto;
+}
+
 .active {
   font-weight: bold !important;
 }
