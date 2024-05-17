@@ -48,14 +48,14 @@ const Heritage = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">KERATON KADRIAH</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Keraton Kadariah merupakan objek wisata berupa istana kerajaan yang berada di Pontianak. Destinasi ini menyajikan kemegahan arsitektur istana yang menyimpan jejak-jejak sejarah kesultanan Pontianak. Menjelajah ruangan serta koleksinya, wisatawan dapat menikmati berbagai daya tariknya. Keraton Kadariah merupakan destinasi wisata berupa istana yang sarat nilai sejarah. Lokasinya pun cukup unik di persimpangan tiga sungai besar. Mengunjungi situs penting ini, wisatawan dapat melakukan berbagai aktivitas wisata pilihan. Berusia sekitar tiga abad, Keraton Kadariah menyimpan sejarah perjalanan kota Pontianak hingga kini. Istana ini menjadi salah satu objek wisata sejarah sebagai cikal bakal lahirnya kota Pontianak. Lokasinya tepat di persimpangan sungai, yakni Sungai Landak, Sungai Kapuas Kecil dan Sungai Kapuas.</p>
           </div>
         </div>
 
         <div className="mt-10 mx-10 flex justify-start">
           <div className="flex flex-col">
-            <h1 className="font-bold mb-2">MAKAM DON JUANG</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <h1 className="font-bold mb-2">MAKAM JUANG MANDOR</h1>
+            <p>Makam Juang Mandor merupakan salah satu situs bersejarah di kecamatan Mandor, Kabupaten Landak, Kalimantan Barat, Indonesia. Makam ini dahulu digunakan sebagai tempat pembantaian ± 21.037 orang oleh tentara Jepang pada tahun 1943 hingga 1944. Peristiwa pembantaian ini kemudian dikenal dengan istilah Tragedi Mandor Berdarah atau Peristiwa Mandor. Makam Juang Mandor berlokasi di Dusun Mandor, Desa Mandor, Kecamatan Mandor, Kabupaten Landak, Kalimantan Barat. Terletak 88 kilometer dari Kota Pontianak dan dapat ditempuh dengan menggunakan kendaraan roda dua maupun roda empat.</p>
           </div>
           <div className="ml-5 sm:w-full max-w-96 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgMakam} />
@@ -68,7 +68,7 @@ const Heritage = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">TUGU KHATULISTIWA</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Tugu Khatulistiwa atau Equator Monument berada di Jalan Khatulistiwa, Pontianak Utara, Provinsi Kalimantan Barat. Lokasinya berada sekitar 3 km dari pusat Kota Pontianak, ke arah Kota Mempawah dan Singkawang. Pada bulan Maret 2005, Tim Badan Pengkajian dan Penerapan Teknologi (BPPT) melakukan koreksi untuk menentukan lokasi titik nol garis khatulistiwa di Kota Pontianak. Koreksi dilakukan dengan menggunakan gabungan metode terestrial dan ekstraterestrial yaitu menggunakan global positioning system (GPS) dan stake-out titik nol garis khatulistiwa dikoreksi. Hasil pengukuran oleh tim BPPT, menunjukkan, posisi tepat Tugu Khatulistiwa saat ini berada pada 0 derajat, 0 menit, 3,809 detik lintang utara; dan, 109 derajat, 19 menit, 19,9 detik bujur timur.</p>
           </div>
         </div>
 

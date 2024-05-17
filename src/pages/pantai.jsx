@@ -54,14 +54,15 @@ const Pantai = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">PANTAI BATU NENEK</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Pantai yang indah yang terdiri dari bebatuan yang cantik seperti di Surga. Tempat yang sangat cocok untuk berfoto ria. Pantai yang dapat dicapai saat air laut surut karena pantai ini terletak disebuah pulau yang dinamakan juga Pulau Batu Nenek.
+              Pantai ini terletak di Desa Temajuk, Kecamatan Paloh, Kabupaten Sambas, Provinsi Kalimantan Barat.Untuk mencapai pantai ini membutuhkan waktu dan tenaga yang cukup besar. Pantai ini berbatasan langsung dengan negara Malaysia. Pantai ini diberi nama “Batu Nenek” karena konon katanya kalau kita berkunjung ke Pantai ini harus mengucapkan, “Permisi, nenek”. Akses untuk menuju ke Pantai ini lumayan terbatas, tidak bisa menggunakan mobil.</p>
           </div>
         </div>
 
         <div className="mt-10 mx-10 flex justify-start">
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">PANTAI PASIR PANJANG</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Pantai Pasir Panjang menjadi ikon wisata dari kota Singkawang, Kalimantan Barat. Destinasi ini menjadi favorit wisatawan karena berjarak cukup dekat dari pusat kota. Sajian pemandangan laut dan pesisirnya tersaji indah dan menawan. Pasir Pantai Panjang juga menyediakan berbagai fasilitas dan sarana wisata yang lengkap. Objek wisata ini berada dalam komplek wisata terpadu Taman Pasir Panjang Indah. Kawasan wisata tepi laut ini disebut Pantai Pasir Panjang karena memiliki pesisir yang memanjang. Hamparan pasir putihnya yang cantik membentang hingga sepanjang tiga kilometer.</p>
           </div>
           <div className="ml-5 sm:w-full max-w-96 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgPanjang} />
@@ -74,7 +75,7 @@ const Pantai = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">PANTAI KURA-KURA</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Pantai Kura Kura Singkawang terletak di Kota Singkawang, Provinsi Kalimantan Barat. Pantai yang tersembunyi ini menawarkan keindahan alam yang masih alami dan pesona yang memikat hati para pengunjungnya. Dengan pasir putih yang lembut, air laut yang jernih, dan pemandangan yang memukau, pantai ini menjadi tempat yang sempurna untuk bersantai dan menikmati liburan Anda. Salah satu momen yang paling ditunggu-tunggu di Pantai Kura Kura Singkawang adalah saat matahari terbenam. Pemandangan matahari terbenam yang indah dengan warna-warni langit dan pantai yang memukau akan membuat Anda terpesona. Selain itu, Anda juga dapat menikmati berbagai makanan laut segar di warung-warung makan yang terletak di sepanjang pantai.</p>
           </div>
         </div>
 
