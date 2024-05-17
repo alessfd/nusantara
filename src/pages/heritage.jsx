@@ -1,5 +1,6 @@
 import React from "react";
 import { CarouselCustomNavigation } from "../components/carousel"
+import { CarouselBannerCustomNavigation } from "../components/carouselBanner"
 import keraton1 from '../assets/heritage/keraton1.jpg'
 import keraton2 from '../assets/heritage/keraton2.jpg'
 import makam1 from '../assets/heritage/makam1.jpg'
@@ -30,7 +31,7 @@ const Heritage = () => {
   return (
     <div>
       <div className="text-overlay bg-black h-16 sm:h-36 w-screen">
-        <CarouselCustomNavigation images={imgBanner}/>
+        <CarouselBannerCustomNavigation images={imgBanner}/>
       </div>
       <div>
         <div className="flex justify-start">

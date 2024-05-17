@@ -26,7 +26,9 @@ function App() {
           <Route path="/situs-bersejarah" element={<Heritage />} />
         </Routes>
       </div>
-      <Copyright /> 
+      <footer>
+        <Copyright /> 
+      </footer>
 
 
       {/* <div id="weatherData"></div> */}
