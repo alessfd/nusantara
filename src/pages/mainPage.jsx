@@ -8,19 +8,28 @@ import banner from "../assets/images/banner.jpg";
 const MainPage = () => {
   initMap()
   return (
-    <div className="main-page">
-      <div className="relative inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10">
-        <img src={banner}
-        className="w-full rounded-xl"
-        />
-
-        <div className="absolute inset-y-1/2 transform -translate-y-1/2 w-full z-10">
-          <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
-            Explore the Beauty of <span className="whitespace-nowrap">Kalimantan Barat</span>
-          </h1>
-        </div>        
+    <div className="main-page h-full">
+      <div className="relative sm:h-5/6 lg:h-fit inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10 rounded-xl">
+        <div className="sm:h-full lg:h-full">
+          <img src={banner}
+          className="h-full w-full object-cover object-center rounded-xl"
+          />
+          <div className="absolute top-0 h-full w-full z-10">
+            <div className="flex flex-col justify-center content-center h-full">
+              <div className="h-min">
+                <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
+                  <a>Explore the Beauty of</a>
+                  <br/>
+                  <span className="whitespace-nowrap">Kalimantan Barat</span>
+                </h1>
+              </div>
+              
+            </div>
+          </div>        
+        </div>
+        <div id="weatherData"></div>
       </div>
-      <div id="weatherData"></div>
+
       <div>
         
       </div>
