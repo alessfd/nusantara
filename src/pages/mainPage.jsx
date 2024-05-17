@@ -9,14 +9,14 @@ const MainPage = () => {
   initMap()
   return (
     <div className="main-page">
-      <div className="relative w-screen z-10">
+      <div className="relative inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10">
         <img src={banner}
-        className="object-fill"
+        className="w-full rounded-xl"
         />
 
-        <div className="absolute inset-y-1/2 translate-y-1/2 w-screen z-10">
+        <div className="absolute inset-y-1/2 transform -translate-y-1/2 w-full z-10">
           <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
-            Explore the Beauty of Kalimantan Barat
+            Explore the Beauty of <span className="whitespace-nowrap">Kalimantan Barat</span>
           </h1>
         </div>        
       </div>
