@@ -49,14 +49,14 @@ const Gunung = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">GUNUNG BAWANG</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Gunung Bawang merupakan sebuah gunung yang terdapat di Provinsi Kalimantan Barat, Indonesia. Gunung ini mempunyai bentuk menyerupai pegunungan karena memanjang sekira 18 Km mencakup 4 kecamatan di Kabupaten Bengkayang. Gunung Bawang memiliki empat puncak runcing yang memiliki ketinggian lebih dari 1.000 Mdpl. Puncak tertingginya bernama Puncak Bawang Raya dengan tinggi mencapai 1.490 Mdpl. Gunung Bawang adalah salah satu gunung yang dikeramatkan oleh Suku Dayak.</p>
           </div>
         </div>
 
         <div className="mt-10 mx-10 flex justify-start">
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">GUNUNG BUKIT RAYA</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Gunung Bukit Raya dengan puncaknya yang dinamakan Puncak Kakam memiliki ketinggian 2.278 meter diatas permukaan laut. Gunung yang berada didalam Taman Nasional Bukit Baka Bukit Raya ini memiliki puncak yang dinyatakan sebagai titik tertinggi Pulau Kalimantan bagian Indonesia. Gunung ini terletak di dua provinsi yaitu Kalimantan Tengah dan Kalimantan Barat. Meskipun puncak gunungnya berada di wilayan Kalimantan Tengah, akan tetapi jalur pendakian terdekat dan sering digunakan adalah jalur dari Kalimantan Barat.</p>
           </div>
           <div className="ml-5 sm:w-full max-w-96 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgRaya} />
@@ -69,7 +69,7 @@ const Gunung = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold mb-2">GUNUNG NIUT</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+            <p>Gunung Niut adalah sebuah gunung yang terletak di tiga kabupaten yaitu Kabupaten Bengkayang, Kabupaten Landak dan kabupaten Sanggau Provinsi Kalimantan Barat, Indonesia. Gunung ini adalah gunung tertinggi di Provinsi Kalimantan Barat dengan ketinggian mencapai 1.701 meter di atas permukaan air laut.Indonesia Jalur pendakian menuju Gunung Niut terdapat tiga jalur. Yaitu Jalur Dawar, Serimbu, Tamong, Sungkung dan Balai Karangan. Namun jalur Dawar di Dusun Dawar, Desa Pisak, Kecamatan Tujuh Belas, Kabupaten Bengkayang menjadi jalur paling mudah dan direkomendasikan.</p>
           </div>
         </div>
 
