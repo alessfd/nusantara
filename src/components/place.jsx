@@ -9,8 +9,16 @@ const fetchPlaceDetails = async (placeId) => {
   return data;
 };
 
+const fetchWeather = async (location) => {
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&appid=8666a73b1a889c3fecee46782c5f523c&units=metric`);
+  const weather = await response.json();
+  console.log(weather);
+  return weather;
+};
+
 const SearchPlace = ({ placeId }) => {
   const [placeDetails, setPlaceDetails] = useState(null);
+  const [placeWeather, setPlaceWeather] = useState(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -19,12 +27,21 @@ const SearchPlace = ({ placeId }) => {
     fetchPlaceDetails(placeId)
       .then((data) => {
         setPlaceDetails(data);
-        setLoading(false);
+        fetchWeather(data.location)
+          .then((weather) => {
+            setPlaceWeather(weather);
+            setLoading(false);
+          })
+          .catch((error) => {
+            console.error(error);
+            setLoading(false);
+          });
       })
       .catch((error) => {
         console.error(error);
         setLoading(false);
       });
+    
   }, [placeId]);
 
   if (loading) {
@@ -36,12 +53,24 @@ const SearchPlace = ({ placeId }) => {
   }
 
   const { displayName, formattedAddress, reviews, photos } = placeDetails;
+  const { weather, main, wind } = placeWeather;
+
+  console.log(location);
+
+  
 
   return (
     <div>
       <img src={`https://places.googleapis.com/v1/${photos[0].name}/media?maxHeightPx=400&maxWidthPx=400&key=${API_KEY}`}/>
       <h2>{displayName.text}</h2>
       <p>Address: {formattedAddress}</p>
+
+      <h2>Current Weather Condition in {displayName.text}</h2>
+      <p>Temperature: {main.temp} °C</p>
+      <p>Weather Condition: {weather[0].main}</p>
+      <p>Humidity: {main.humidity}%</p>
+      <p>Wind Speed: {wind.speed} m/s</p>
+
       <h3>Reviews:</h3>
       <ul>
         {reviews.slice(0, 3).map((review, index) => (
