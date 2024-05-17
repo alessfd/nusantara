@@ -19,21 +19,19 @@ function App() {
     <>
       <div className="hover:scrollbar-thumb-teal-800 active:scrollbar-thumb-teal-700 h-screen scrollbar scrollbar-thumb-teal-900 overflow-y-scroll">
         <Navbar />
-        <div>
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/pantai" element={<Pantai />} />
-            <Route path="/gunung" element={<Gunung />} />
-            <Route path="/situs-bersejarah" element={<Heritage />} />
-            <Route path="/info" element={<Info />}>
-              <Route path=":id" />
-            </Route>
-          </Routes>
-        </div>
-        <footer>
-          <Copyright /> 
-        </footer>
+
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/pantai" element={<Pantai />} />
+          <Route path="/gunung" element={<Gunung />} />
+          <Route path="/situs-bersejarah" element={<Heritage />} />
+          <Route path="/info" element={<Info />}>
+            <Route path=":id" />
+          </Route>
+        </Routes>
+
+        <Copyright /> 
 
 
         {/* <div id="weatherData"></div> */}
