@@ -60,35 +60,46 @@ const SearchPlace = ({ placeId }) => {
   
 
   return (
-    <div>
-      <img src={`https://places.googleapis.com/v1/${photos[0].name}/media?maxHeightPx=400&maxWidthPx=400&key=${API_KEY}`}/>
-      <h2>{displayName.text}</h2>
-      <p>Address: {formattedAddress}</p>
+    <div className='mx-10 mb-20'>
+      <h2 className='text-3xl font-bold mb-5 lg:text-5xl'>{displayName.text}</h2>
+      <div className='flex'>
+        <img 
+        src={`https://places.googleapis.com/v1/${photos[0].name}/media?maxHeightPx=400&maxWidthPx=400&key=${API_KEY}`}
+        className='rounded-xl w-1/2 mr-5 mb-5 lg:w-2/5 lg:mr-10'
+        />
+        <div className='flex flex-col text-lg lg:text-xl'>
+          <p className='whitespace-pre text-bold'>Address:</p>
+          <p className='mb-3 overflow-hidden whitespace-wrap text-ellipsis'>{formattedAddress}</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    Temperature: {main.temp} °C</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    Weather Condition: {weather[0].main}</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    Humidity: {main.humidity}%</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis'>    Wind Speed: {wind.speed} m/s</p>
+        </div>
+      </div>
 
-      <iframe
-        width="600"
-        height="450"
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyClFj1LlfnQdk7brARTeTrxFZKch7g6VZI&q=place_id:${placeId}`}>
-      </iframe>
+      <div>
+        <iframe
+          width="500"
+          height="350"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className='rounded-xl w-full mb-5'
+          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyClFj1LlfnQdk7brARTeTrxFZKch7g6VZI&q=place_id:${placeId}`}>
+        </iframe>
+      </div>
+      <div>
+        <h3 className='text-xl font-bold'>Reviews</h3>
+        <ul>
+          {reviews.slice(0, 3).map((review, index) => (
+            <li key={index} className='border-4 border-orange-100 p-5 mb-2 rounded-lg'>
+              <p className='text-xl mb-1 font-bold'>{review.authorAttribution.displayName}</p>
+              {review.text.text}
+              <p className='font-bold mt-3'>Rating: {review.rating}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      <h2>Current Weather Condition in {displayName.text}</h2>
-      <p>Temperature: {main.temp} °C</p>
-      <p>Weather Condition: {weather[0].main}</p>
-      <p>Humidity: {main.humidity}%</p>
-      <p>Wind Speed: {wind.speed} m/s</p>
-
-      <h3>Reviews:</h3>
-      <ul>
-        {reviews.slice(0, 3).map((review, index) => (
-          <li key={index}>
-            <p>{review.authorAttribution.displayName}</p>
-            <p>Rating: {review.rating}</p>
-            {review.text.text}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

@@ -25,13 +25,13 @@ const AboutUs = () => {
       link: "https://www.instagram.com/jimmytan_13/",
     },
     {
-      src: varrel,
+      src: sam,
       name: "Samuel Susilo",
       nim: "00000102827",
       link: "https://www.instagram.com/samuel.x666/",
     },
     {
-      src: sam,
+      src: varrel,
       name: "Varrel Noas Arrazes Sinaga",
       nim: "00000109877",
       link: "https://www.instagram.com/varrelnoasas/",
