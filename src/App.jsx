@@ -5,6 +5,7 @@ import AboutUs from "./pages/aboutUs";
 import Pantai from './pages/pantai';
 import Gunung from './pages/gunung';
 import Heritage from './pages/heritage';
+import Info from './pages/info';
 import { Route, Routes } from "react-router-dom";
 import { Loader } from "@googlemaps/js-api-loader"
 import Copyright from './components/copyright';
@@ -24,6 +25,9 @@ function App() {
           <Route path="/pantai" element={<Pantai />} />
           <Route path="/gunung" element={<Gunung />} />
           <Route path="/situs-bersejarah" element={<Heritage />} />
+          <Route path="/info" element={<Info />}>
+            <Route path=":id" />
+          </Route>
         </Routes>
       </div>
       <footer>

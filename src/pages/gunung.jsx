@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { CarouselCustomNavigation } from "../components/carousel"
 import { CarouselBannerCustomNavigation } from "../components/carouselBanner"
 import bawang1 from '../assets/gunung/bawang1.jpg'
@@ -48,7 +49,11 @@ const Gunung = () => {
             <CarouselCustomNavigation images={imgBawang} />
           </div>
           <div className="flex flex-col">
-            <h1 className="font-bold mb-2">GUNUNG BAWANG</h1>
+            <h1 className="font-bold mb-2">
+              <Link to="/info/ChIJfbK2kZJI4zER_2Z0sRKaMPU">
+                GUNUNG BAWANG
+              </Link>
+            </h1>
             <p>Gunung Bawang merupakan sebuah gunung yang terdapat di Provinsi Kalimantan Barat, Indonesia. Gunung ini mempunyai bentuk menyerupai pegunungan karena memanjang sekira 18 Km mencakup 4 kecamatan di Kabupaten Bengkayang. Gunung Bawang memiliki empat puncak runcing yang memiliki ketinggian lebih dari 1.000 Mdpl. Puncak tertingginya bernama Puncak Bawang Raya dengan tinggi mencapai 1.490 Mdpl. Gunung Bawang adalah salah satu gunung yang dikeramatkan oleh Suku Dayak.</p>
           </div>
         </div>
