@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react';
 const API_KEY = 'AIzaSyClFj1LlfnQdk7brARTeTrxFZKch7g6VZI';
 
 const fetchPlaceDetails = async (placeId) => {
-  const response = await fetch(`https://places.googleapis.com/v1/places/${placeId}?fields=*&key=${API_KEY}`);
+  const response = await fetch(`https://places.googleapis.com/v1/places/${placeId}?fields=displayName,formattedAddress,reviews,photos,location&key=${API_KEY}`);
   const data = await response.json();
+  console.log(data);
   return data;
 };
 
