@@ -1117,6 +1117,23 @@ video {
   height: 100vh;
 }
 
+<<<<<<< HEAD
+=======
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+>>>>>>> 0ace0a544e6ec6ae6224cf5adbe505c407411b25
 .max-h-96 {
   max-height: 24rem;
 }
@@ -1270,6 +1287,25 @@ video {
   width: 100vw;
 }
 
+<<<<<<< HEAD
+=======
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+>>>>>>> 0ace0a544e6ec6ae6224cf5adbe505c407411b25
 .min-w-\[100vw\] {
   min-width: 100vw;
 }
