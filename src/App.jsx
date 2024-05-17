@@ -17,28 +17,28 @@ function App() {
 
   return (
     <>
-      <div className="hover:scrollbar-thumb-slate-700 active:scrollbar-thumb-slate-700 h-screen scrollbar scrollbar-thumb-slate-700 overflow-y-scroll">
-      <Navbar />
-      <div className='h-full'>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/pantai" element={<Pantai />} />
-          <Route path="/gunung" element={<Gunung />} />
-          <Route path="/situs-bersejarah" element={<Heritage />} />
-          <Route path="/info" element={<Info />}>
-            <Route path=":id" />
-          </Route>
-        </Routes>
+      <div className="hover:scrollbar-thumb-teal-800 active:scrollbar-thumb-teal-700 h-screen scrollbar scrollbar-thumb-teal-900 overflow-y-scroll">
+        <Navbar />
+        <div>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/pantai" element={<Pantai />} />
+            <Route path="/gunung" element={<Gunung />} />
+            <Route path="/situs-bersejarah" element={<Heritage />} />
+            <Route path="/info" element={<Info />}>
+              <Route path=":id" />
+            </Route>
+          </Routes>
+        </div>
+        <footer>
+          <Copyright /> 
+        </footer>
+
+
+        {/* <div id="weatherData"></div> */}
       </div>
-      <footer>
-        <Copyright /> 
-      </footer>
-
-
-      {/* <div id="weatherData"></div> */}
-    </div>
-  </>
+    </>
   )
 }
 

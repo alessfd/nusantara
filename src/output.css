@@ -3657,6 +3657,14 @@ video {
   height: var(--scrollbar-height, 16px);
 }
 
+.scrollbar-thumb-gray-900 {
+  --scrollbar-thumb: #212121 !important;
+}
+
+.scrollbar-thumb-teal-900 {
+  --scrollbar-thumb: #004d40 !important;
+}
+
 .\[-webkit-appearance\:none\] {
   -webkit-appearance: none;
 }
@@ -5703,6 +5711,22 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.hover\:scrollbar-thumb-gray-900 {
+  --scrollbar-thumb-hover: #212121 !important;
+}
+
+.hover\:scrollbar-thumb-gray-600 {
+  --scrollbar-thumb-hover: #757575 !important;
+}
+
+.hover\:scrollbar-thumb-gray-800 {
+  --scrollbar-thumb-hover: #424242 !important;
+}
+
+.hover\:scrollbar-thumb-teal-800 {
+  --scrollbar-thumb-hover: #00695c !important;
+}
+
 .hover\:before\:opacity-10:hover::before {
   content: var(--tw-content);
   opacity: 0.1;
@@ -6105,6 +6129,18 @@ body {
   --tw-shadow: 0 0 rgb(0, 0 / 0, 0);
   --tw-shadow-colored: 0 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:scrollbar-thumb-black {
+  --scrollbar-thumb-active: #000000 !important;
+}
+
+.active\:scrollbar-thumb-gray-700 {
+  --scrollbar-thumb-active: #616161 !important;
+}
+
+.active\:scrollbar-thumb-teal-700 {
+  --scrollbar-thumb-active: #00796b !important;
 }
 
 .disabled\:pointer-events-none:disabled {
