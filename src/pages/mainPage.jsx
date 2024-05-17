@@ -13,7 +13,7 @@ import tuguPoster from "../assets/images/tuguBanner.jpg";
 
 const MainPage = () => {
   return (
-    <div className="main-page h-full">
+    <div className="main-page h-full mb-40">
       <div className="relative sm:h-5/6 lg:h-fit inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10 rounded-xl">
         <div className="sm:h-full lg:h-full">
           <img src={banner}
@@ -35,10 +35,7 @@ const MainPage = () => {
         <div id="weatherData"></div>
       </div>
 
-      <div>
-        
-      </div>
-      <div className="flex mt-10 mb-10 ml-12 h-3/5 justify-center">
+      <div className="flex mt-10 ml-12 h-3/5 justify-center">
         <Link to="/pantai" className="w-1/3 relative"> 
           <img src={pantaiPoster} className="w-full h-full rounded-xl object-cover"/>
           <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-2xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">PANTAI</h1>
@@ -53,7 +50,7 @@ const MainPage = () => {
         </Link>
       </div>
 
-      <div>
+      <div className="mb-20">
         <div id="map" className="w-full"></div>
       </div>
 

@@ -6,7 +6,7 @@ const Person = ({ images, name, nim, link }) => {
     <div className="flex flex-col">
       <img
       src={images}
-      className="w-32 md:w-48 mx-10 border-4 border-red-100 border-double"
+      className="w-32 md:w-48 h-60 object-cover mx-10 border-4 border-red-100 border-double"
       />
       <h2 className="text-center font-semibold">{name}</h2>
       <h3 className="text-center font-semibold">{nim}</h3>

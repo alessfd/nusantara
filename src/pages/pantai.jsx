@@ -13,6 +13,7 @@ import kura2 from '../assets/pantai/kura2.jpg'
 import mayang from '../assets/pantai/mayang.jpeg'
 import panjang4 from '../assets/pantai/panjang4.jpg'
 import kijing from '../assets/pantai/kijing.jpg'
+import linkLogo from '../assets/icons/link.png'
 
 
 const Pantai = () => {
@@ -48,47 +49,51 @@ const Pantai = () => {
             </h1>
         </div>
       </div>
+
       <div>
-        <div className="mt-10 mx-10 flex justify-start">
-          <div className="mr-5 sm:w-full max-w-96 max-h-60 min-h-8">
+        <div className="mt-10 mx-10 lg:mx-40 flex justify-start">
+          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgBatuNenek} />
           </div>
           <div className="flex flex-col">
-            <h1 className="font-bold mb-2">
-              <Link to="/info/ChIJJZxuhpzK-jER7S7bsrmkJNI">
+            <h1 className="font-bold text-3xl mb-2">
+              <Link to="/info/ChIJJZxuhpzK-jER7S7bsrmkJNI" className="flex">
                 PANTAI BATU NENEK
+                <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
             </h1>
-            <p>Pantai yang indah yang terdiri dari bebatuan yang cantik seperti di Surga. Tempat yang sangat cocok untuk berfoto ria. Pantai yang dapat dicapai saat air laut surut karena pantai ini terletak disebuah pulau yang dinamakan juga Pulau Batu Nenek.
+            <p className="text-lg">Pantai yang indah yang terdiri dari bebatuan yang cantik seperti di Surga. Tempat yang sangat cocok untuk berfoto ria. Pantai yang dapat dicapai saat air laut surut karena pantai ini terletak disebuah pulau yang dinamakan juga Pulau Batu Nenek.
               Pantai ini terletak di Desa Temajuk, Kecamatan Paloh, Kabupaten Sambas, Provinsi Kalimantan Barat.Untuk mencapai pantai ini membutuhkan waktu dan tenaga yang cukup besar. Pantai ini berbatasan langsung dengan negara Malaysia. Pantai ini diberi nama “Batu Nenek” karena konon katanya kalau kita berkunjung ke Pantai ini harus mengucapkan, “Permisi, nenek”. Akses untuk menuju ke Pantai ini lumayan terbatas, tidak bisa menggunakan mobil.</p>
           </div>
         </div>
 
-        <div className="mt-10 mx-10 flex justify-start">
+        <div className="mt-10 mx-10 lg:mx-40 flex justify-start">
           <div className="flex flex-col">
-            <h1 className="font-bold mb-2">
-              <Link to="/info/ChIJ86UKssjX2zERdFRY15fYLvM">
+            <h1 className="font-bold text-3xl mb-2">
+              <Link to="/info/ChIJ86UKssjX2zERdFRY15fYLvM" className="flex">
                 PANTAI PASIR PANJANG
+                <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
             </h1>
-            <p>Pantai Pasir Panjang menjadi ikon wisata dari kota Singkawang, Kalimantan Barat. Destinasi ini menjadi favorit wisatawan karena berjarak cukup dekat dari pusat kota. Sajian pemandangan laut dan pesisirnya tersaji indah dan menawan. Pasir Pantai Panjang juga menyediakan berbagai fasilitas dan sarana wisata yang lengkap. Objek wisata ini berada dalam komplek wisata terpadu Taman Pasir Panjang Indah. Kawasan wisata tepi laut ini disebut Pantai Pasir Panjang karena memiliki pesisir yang memanjang. Hamparan pasir putihnya yang cantik membentang hingga sepanjang tiga kilometer.</p>
+            <p className="text-lg">Pantai Pasir Panjang menjadi ikon wisata dari kota Singkawang, Kalimantan Barat. Destinasi ini menjadi favorit wisatawan karena berjarak cukup dekat dari pusat kota. Sajian pemandangan laut dan pesisirnya tersaji indah dan menawan. Pasir Pantai Panjang juga menyediakan berbagai fasilitas dan sarana wisata yang lengkap. Objek wisata ini berada dalam komplek wisata terpadu Taman Pasir Panjang Indah. Kawasan wisata tepi laut ini disebut Pantai Pasir Panjang karena memiliki pesisir yang memanjang. Hamparan pasir putihnya yang cantik membentang hingga sepanjang tiga kilometer.</p>
           </div>
-          <div className="ml-5 sm:w-full max-w-96 max-h-60 min-h-8">
+          <div className="ml-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgPanjang} />
           </div>
         </div>
 
-        <div className="mt-10 mx-10 flex justify-start">
-          <div className="mr-5 sm:w-full max-w-96 max-h-60 min-h-8">
+        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start">
+          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgKura} />
           </div>
           <div className="flex flex-col">
-            <h1 className="font-bold mb-2">
-              <Link to="/info/ChIJSeQn6AD_zC0RhPk7W66aVjQ">
+            <h1 className="font-bold text-3xl mb-2">
+              <Link to="/info/ChIJSeQn6AD_zC0RhPk7W66aVjQ" className="flex">
                 PANTAI KURA-KURA
+                <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
             </h1>
-            <p>Pantai Kura Kura Singkawang terletak di Kota Singkawang, Provinsi Kalimantan Barat. Pantai yang tersembunyi ini menawarkan keindahan alam yang masih alami dan pesona yang memikat hati para pengunjungnya. Dengan pasir putih yang lembut, air laut yang jernih, dan pemandangan yang memukau, pantai ini menjadi tempat yang sempurna untuk bersantai dan menikmati liburan Anda. Salah satu momen yang paling ditunggu-tunggu di Pantai Kura Kura Singkawang adalah saat matahari terbenam. Pemandangan matahari terbenam yang indah dengan warna-warni langit dan pantai yang memukau akan membuat Anda terpesona. Selain itu, Anda juga dapat menikmati berbagai makanan laut segar di warung-warung makan yang terletak di sepanjang pantai.</p>
+            <p className="text-lg">Pantai Kura Kura Singkawang terletak di Kota Singkawang, Provinsi Kalimantan Barat. Pantai yang tersembunyi ini menawarkan keindahan alam yang masih alami dan pesona yang memikat hati para pengunjungnya. Dengan pasir putih yang lembut, air laut yang jernih, dan pemandangan yang memukau, pantai ini menjadi tempat yang sempurna untuk bersantai dan menikmati liburan Anda. Salah satu momen yang paling ditunggu-tunggu di Pantai Kura Kura Singkawang adalah saat matahari terbenam. Pemandangan matahari terbenam yang indah dengan warna-warni langit dan pantai yang memukau akan membuat Anda terpesona. Selain itu, Anda juga dapat menikmati berbagai makanan laut segar di warung-warung makan yang terletak di sepanjang pantai.</p>
           </div>
         </div>
 

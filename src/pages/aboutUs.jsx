@@ -5,29 +5,33 @@ import red from "../assets/profil/red.webp";
 import blue from "../assets/profil/blue.webp";
 import black from "../assets/profil/black.webp";
 import pink from "../assets/profil/pink.webp";
+import ales from "../assets/profil/ales.jpeg";
+import jim from "../assets/profil/jimmy.jpeg";
+import varrel from "../assets/profil/varrel.jpeg";
+import sam from "../assets/profil/samuel.jpeg";
 
 const AboutUs = () => {
   const profiles = [
     {
-      src: red,
+      src: ales,
       name: "Alessandro Fayez Devanno",
       nim: "00000106265",
       link: "https://www.instagram.com/aless.fd/",
     },
     {
-      src: blue,
+      src: jim,
       name: "Jimmy Wijaya Tandra",
       nim: "00000092897",
       link: "https://www.instagram.com/jimmytan_13/",
     },
     {
-      src: black,
+      src: varrel,
       name: "Samuel Susilo",
       nim: "00000102827",
       link: "https://www.instagram.com/samuel.x666/",
     },
     {
-      src: pink,
+      src: sam,
       name: "Varrel Noas Arrazes Sinaga",
       nim: "00000109877",
       link: "https://www.instagram.com/varrelnoasas/",
