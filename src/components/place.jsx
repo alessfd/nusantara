@@ -45,8 +45,9 @@ const SearchPlace = ({ placeId }) => {
       <ul>
         {reviews.slice(0, 3).map((review, index) => (
           <li key={index}>
-            <p>{review.text.text}</p>
+            <p>{review.authorAttribution.displayName}</p>
             <p>Rating: {review.rating}</p>
+            <p>{review.text.text}</p>
           </li>
         ))}
       </ul>
