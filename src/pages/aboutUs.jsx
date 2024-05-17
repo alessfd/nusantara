@@ -19,12 +19,12 @@ const AboutUs = () => {
       nim: "00000092897",
     },
     {
-      src: pink,
+      src: black,
       name: "Samuel Susilo",
       nim: "00000102827",
     },
     {
-      src: black,
+      src: pink,
       name: "Varrel Noas",
       nim: "00000109877",
     },

@@ -6,7 +6,7 @@ export function CarouselCustomNavigation({ images }) {
       className="rounded-x"
       loop={true}
       autoplay={true}
-      autoplayDelay={3500}
+      autoplayDelay={8000}
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
@@ -25,7 +25,7 @@ export function CarouselCustomNavigation({ images }) {
         <img
           key={index}
           src={src}
-          className="w-1/2 h-36 object-cover"
+          className="w-full h-full object-cover rounded-lg"
         />
       ))}
     </Carousel>

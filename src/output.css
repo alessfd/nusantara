@@ -1127,6 +1127,10 @@ video {
   height: auto;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -1274,6 +1278,14 @@ video {
 
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .min-w-\[100vw\] {

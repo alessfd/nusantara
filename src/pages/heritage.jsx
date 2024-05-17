@@ -11,13 +11,13 @@ import tugu2 from '../assets/heritage/tugu2.jpg'
 
 const Heritage = () => {
   const imgBanner = [
-    keraton2,
+    keraton1,
     makam3,
     tugu2,
   ];
   const imgKeraton = [
-    keraton1, 
     keraton2, 
+    keraton1, 
   ];
   const imgMakam = [
     makam1, 
@@ -30,29 +30,46 @@ const Heritage = () => {
 
   return (
     <div>
-      <div className="text-overlay bg-black h-16 sm:h-36 w-screen">
-        <CarouselBannerCustomNavigation images={imgBanner}/>
+      <div className="relative">
+        <div className="text-overlay h-52 md:h-96  w-full">
+          <CarouselBannerCustomNavigation images={imgBanner}/>
+        </div>
+        <div className="absolute inset-y-1/2 transform -translate-y-8 w-full z-10">
+            <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
+              Beauty of <span className="whitespace-nowrap">Kalimantan Barat Heritages</span>
+            </h1>
+        </div>
       </div>
+
       <div>
-        <div className="flex justify-start">
-          <div className="bg-black">
+        <div className="mt-10 mx-10 flex justify-start">
+          <div className="mr-5 sm:w-full max-w-96 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgKeraton} />
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+          <div className="flex flex-col">
+            <h1 className="font-bold mb-2">KERATON KADRIAH</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+          </div>
         </div>
 
-        <div className="flex justify-end">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
-          <div className="bg-black">
+        <div className="mt-10 mx-10 flex justify-start">
+          <div className="flex flex-col">
+            <h1 className="font-bold mb-2">MAKAM DON JUANG</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+          </div>
+          <div className="ml-5 sm:w-full max-w-96 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgMakam} />
           </div>
         </div>
 
-        <div className="flex justify-start">
-          <div className="bg-black">
+        <div className="mt-10 mx-10 flex justify-start">
+          <div className="mr-5 sm:w-full max-w-96 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgTugu} />
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+          <div className="flex flex-col">
+            <h1 className="font-bold mb-2">TUGU KHATULISTIWA</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod interdum felis id dignissim. Praesent eleifend, nibh at molestie gravida, ex dui malesuada ex, eu rutrum sapien sem eget felis. Aenean consequat rhoncus mauris quis feugiat. Nullam sodales consequat consectetur. Donec non vulputate mi. Donec eget arcu condimentum, interdum lacus sit amet, lacinia lorem. Nam tincidunt nunc ac lacus consequat dapibus.</p>
+          </div>
         </div>
 
       </div>
