@@ -3,7 +3,7 @@ import React from "react";
 // import BottomNavbar from "../components/bottomNavbar";
 import Navbar from "../components/navbar";
 import { Link } from "react-router-dom";
-import initMap from "../components/maps";
+// import initMap from "../components/maps";
 import banner from "../assets/images/banner.jpg";
 import pantaiPoster from "../assets/images/pantaiBanner.jpg";
 import gunungPoster from "../assets/images/gunungBanner.jpg";
