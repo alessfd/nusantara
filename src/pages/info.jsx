@@ -21,4 +21,10 @@ const Info = () => {
   ); 
 };
 
+const endpoint = "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=bEbLhudJGJdiy5VJMvcg92ZJjgOx7X93"
+
+fetch(endpoint)
+  .then((data) => console.log(data))
+  .then (result => console.log(result))
+
 export default Info;
