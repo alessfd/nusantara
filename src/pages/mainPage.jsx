@@ -2,8 +2,14 @@ import React from "react";
 // import MapComponent from "../components/mapComponent";
 // import BottomNavbar from "../components/bottomNavbar";
 import Navbar from "../components/navbar";
+import { Link } from "react-router-dom";
 import initMap from "../components/maps";
 import banner from "../assets/images/banner.jpg";
+import pantaiPoster from "../assets/images/pantaiBanner.jpg";
+import gunungPoster from "../assets/images/gunungBanner.jpg";
+import tuguPoster from "../assets/images/tuguBanner.jpg";
+
+
 
 const MainPage = () => {
   initMap()
@@ -33,19 +39,19 @@ const MainPage = () => {
       <div>
         
       </div>
-      <div className="destinasi">
-        <div className="wisata">
-          <h2>Pantai</h2>
-          <div className="gambarWisata">
-            <img src={"../assets/pantai/pantai-batu-nenek.jpg"}/>
-          </div>
-        </div>
-        <div className="wisata">
-          <h2>Gunung</h2>
-        </div>
-        <div className="wisata">
-          <h2>Situs Bersejarah</h2>
-        </div>
+      <div className="flex mt-10 mb-10 ml-12 h-3/5 justify-center">
+        <Link to="/pantai" className="w-1/3 relative"> 
+          <img src={pantaiPoster} className="w-full h-full rounded-xl object-cover"/>
+          <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-2xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">PANTAI</h1>
+        </Link>
+        <Link to="/gunung" className="w-1/3 mx-8 relative">
+          <img src={gunungPoster} className="w-full h-full object-cover rounded-xl"/>
+          <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-2xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">GUNUNG</h1>
+        </Link>
+        <Link to="/situs-bersejarah" className="w-1/3 mr-12 relative">
+          <img src={tuguPoster} className="w-full h-full object-cover rounded-xl"/>
+          <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-2xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full overflow-hidden whitespace-wrap text-ellipsis">SITUS BERSEJARAH</h1>
+        </Link>
       </div>
 
       <div>
