@@ -11,7 +11,7 @@ import beachIcon from '../assets/icons/beachIcon.svg'
 import bookIcon from '../assets/icons/bookIcon.svg'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import React from "react";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useMatch, useResolvedPath, matchPath, useLocation } from "react-router-dom";
 import logo from '../assets/images/logo.png';
 
 const wisata = [
@@ -34,6 +34,34 @@ function CustomLink({ to, children, ...props }) {
       {children}
     </Link>
   </span>
+  );
+}
+
+function CustomWisata({ to, children, ...props }) {
+  const { pathname } = useLocation();
+
+  // const isActive = useMatch(["/info/:id"])
+
+  // const isActive = matchPath({ path: ,
+  // exact: true,
+  // strict: false}, {path: resolvedPath.pathname, end: true })
+
+  const paths = [
+    '/info/:id',
+    '/gunung',
+    '/pantai',
+    '/situs-bersejarah'
+  ]
+
+  const isActive = paths.some((path) =>
+    matchPath(path, pathname)
+  );
+  
+
+  return (
+    <span className={(isActive ? "flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 bg-lime-50 px-2 py-1 -mx-2 -my-1 rounded-lg" : "flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900")}>
+        {children}
+    </span>
   );
 }
 
@@ -68,8 +96,10 @@ export default function Navbar() {
 
           <Popover className="relative z-40">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Wisata
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+              <CustomWisata>
+                Wisata
+                <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400"    aria-hidden="true" /> 
+              </CustomWisata>
             </Popover.Button>
 
             <Transition

@@ -17,8 +17,9 @@ function App() {
 
   return (
     <>
+      <div className="hover:scrollbar-thumb-slate-700 active:scrollbar-thumb-slate-700 h-screen scrollbar scrollbar-thumb-slate-700 overflow-y-scroll">
       <Navbar />
-      <div>
+      <div className='h-full'>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -36,7 +37,8 @@ function App() {
 
 
       {/* <div id="weatherData"></div> */}
-    </>
+    </div>
+  </>
   )
 }
 
