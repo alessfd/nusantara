@@ -1,8 +1,6 @@
 import React from "react";
 // import MapComponent from "../components/mapComponent";
 // import BottomNavbar from "../components/bottomNavbar";
-import Navbar from "../components/navbar";
-import initMap from "../components/maps";
 import banner from "../assets/images/banner.jpg";
 
 const MainPage = () => {

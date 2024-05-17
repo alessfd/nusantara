@@ -65,6 +65,14 @@ const SearchPlace = ({ placeId }) => {
       <h2>{displayName.text}</h2>
       <p>Address: {formattedAddress}</p>
 
+      <iframe
+        width="600"
+        height="450"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyClFj1LlfnQdk7brARTeTrxFZKch7g6VZI&q=place_id:${placeId}`}>
+      </iframe>
+
       <h2>Current Weather Condition in {displayName.text}</h2>
       <p>Temperature: {main.temp} °C</p>
       <p>Weather Condition: {weather[0].main}</p>
