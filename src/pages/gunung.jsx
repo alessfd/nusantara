@@ -61,7 +61,11 @@ const Gunung = () => {
 
         <div className="mt-10 mx-10 flex justify-start">
           <div className="flex flex-col">
-            <h1 className="font-bold mb-2">GUNUNG BUKIT RAYA</h1>
+            <h1 className="font-bold mb-2">
+              <Link to="/info/ChIJG6glHnNyAC4RveqwUbfMgyo">
+                GUNUNG BUKIT RAYA
+              </Link>
+            </h1>
             <p>Gunung Bukit Raya dengan puncaknya yang dinamakan Puncak Kakam memiliki ketinggian 2.278 meter diatas permukaan laut. Gunung yang berada didalam Taman Nasional Bukit Baka Bukit Raya ini memiliki puncak yang dinyatakan sebagai titik tertinggi Pulau Kalimantan bagian Indonesia. Gunung ini terletak di dua provinsi yaitu Kalimantan Tengah dan Kalimantan Barat. Meskipun puncak gunungnya berada di wilayan Kalimantan Tengah, akan tetapi jalur pendakian terdekat dan sering digunakan adalah jalur dari Kalimantan Barat.</p>
           </div>
           <div className="ml-5 sm:w-full max-w-96 max-h-60 min-h-8">
@@ -74,7 +78,11 @@ const Gunung = () => {
             <CarouselCustomNavigation images={imgNiut} />
           </div>
           <div className="flex flex-col">
-            <h1 className="font-bold mb-2">GUNUNG NIUT</h1>
+            <h1 className="font-bold mb-2">
+              <Link to="/info/ChIJA6Xpfs6i_DER5xRY5_e97yE">
+                GUNUNG NIUT
+              </Link>
+            </h1>
             <p>Gunung Niut adalah sebuah gunung yang terletak di tiga kabupaten yaitu Kabupaten Bengkayang, Kabupaten Landak dan kabupaten Sanggau Provinsi Kalimantan Barat, Indonesia. Gunung ini adalah gunung tertinggi di Provinsi Kalimantan Barat dengan ketinggian mencapai 1.701 meter di atas permukaan air laut.Indonesia Jalur pendakian menuju Gunung Niut terdapat tiga jalur. Yaitu Jalur Dawar, Serimbu, Tamong, Sungkung dan Balai Karangan. Namun jalur Dawar di Dusun Dawar, Desa Pisak, Kecamatan Tujuh Belas, Kabupaten Bengkayang menjadi jalur paling mudah dan direkomendasikan.</p>
           </div>
         </div>
