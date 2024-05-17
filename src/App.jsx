@@ -16,10 +16,8 @@ function App() {
 
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
-      <div className="bg-lime-50">
+      <Navbar />
+      <div>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about-us" element={<AboutUs />} />

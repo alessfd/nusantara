@@ -30,7 +30,7 @@ const Gunung = () => {
   ];
 
   return (
-    <div>
+    <div className="h-auto overflow-hidden">
       <div className="text-overlay bg-black h-16 sm:h-36 w-screen">
         <CarouselBannerCustomNavigation images={imgBanner}/>
       </div>
