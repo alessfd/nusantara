@@ -77,7 +77,7 @@ const SearchPlace = ({ placeId }) => {
           <li key={index}>
             <p>{review.authorAttribution.displayName}</p>
             <p>Rating: {review.rating}</p>
-            <p>{review.text.text}</p>
+            {review.text.text}
           </li>
         ))}
       </ul>
