@@ -1,4 +1,4 @@
-function fetchWeatherData() {
+export default function FetchWeatherData() {
     const apiKey = 'FiLxwQrry1gpUJ0SS42Oum7NEvLyjrXp'; // Replace with your Tomorrow.io API key
     const location = "pontianak";
 
@@ -8,26 +8,21 @@ function fetchWeatherData() {
       .then(response => response.json())
       .then(data => {
         console.log('API Response:', data);
-        const weatherDataElement = document.getElementById('weatherData');
         const currentData = data.data.values;
-        if (data != null) {
-          const weatherCondition = getWeatherCondition(currentData.weatherCode);
-          weatherDataElement.innerHTML = `
+        const weatherCondition = getWeatherCondition(currentData.weatherCode);
+        return (
+          <div>
             <h2>Current Weather Condition in Pontianak</h2>
-            <p>Temperature: ${currentData.temperature} Â°C</p>
-            <p>Weather Condition: ${weatherCondition}</p>
-            <p>Humidity: ${currentData.humidity}%</p>
-            <p>Wind Speed: ${currentData.windSpeed} m/s</p>
-          `;
-        } else {
-          weatherDataElement.innerHTML = '<p>No weather data available</p>';
-        }
+            <p>Temperature: {currentData.temperature} Â°C</p>
+            <p>Weather Condition: {weatherCondition}</p>
+            <p>Humidity: {currentData.humidity}%</p>
+            <p>Wind Speed: {currentData.windSpeed} m/s</p>
+          </div>
+        );
       })
   }
 
-  window.onload = fetchWeatherData;
-
-  function getWeatherCondition(weatherCode) {
+function getWeatherCondition(weatherCode) {
     switch (weatherCode) {
       case 1000:
         return 'Clear';

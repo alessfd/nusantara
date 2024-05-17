@@ -1147,12 +1147,6 @@ video {
   height: 100vh;
 }
 
-.h-fit {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .max-h-60 {
   max-height: 15rem;
 }
