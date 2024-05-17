@@ -10,6 +10,7 @@ import kelam1 from '../assets/gunung/kelam1.webp'
 import niut1 from '../assets/gunung/niut1.webp'
 import niut2 from '../assets/gunung/niut2.jpg'
 
+//lmao
 
 const Gunung = () => {
   const imgBanner = [
