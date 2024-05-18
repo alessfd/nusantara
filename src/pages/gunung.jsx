@@ -38,7 +38,7 @@ const Gunung = () => {
         </div>
         <div className="absolute inset-y-1/2 transform -translate-y-8 w-full z-10">
             <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
-              Beauty of <span className="whitespace-nowrap">Kalimantan Barat Mountains</span>
+              Beauty of <br/>Kalimantan Barat<br/>Mountains
             </h1>
         </div>
       </div>
