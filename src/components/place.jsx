@@ -66,12 +66,12 @@ const SearchPlace = ({ placeId }) => {
   return (
     <div className='mx-10 mb-20'>
       <h2 className='text-3xl font-bold mb-5 lg:text-5xl'>{displayName.text}</h2>
-      <div className='flex'>
+      <div className='flex flex-col lg:flex-row'>
         <img 
         src={`https://places.googleapis.com/v1/${photos[0].name}/media?maxHeightPx=400&maxWidthPx=400&key=${API_KEY}`}
-        className='rounded-xl w-1/2 mr-5 mb-5 lg:w-2/5 lg:mr-10'
+        className='rounded-xl w-full lg:w-1/2 mr-5 mb-5 lg:w-2/5 lg:mr-10'
         />
-        <div className='flex flex-col text-lg lg:text-xl'>
+        <div className='flex flex-col text-lg lg:text-xl mb-4'>
           <p className='whitespace-pre text-bold'>Address:</p>
           <p className='mb-3 overflow-hidden whitespace-wrap text-ellipsis'>{formattedAddress}</p>
           <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    Temperature: {main.temp} °C</p>
