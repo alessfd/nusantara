@@ -35,7 +35,7 @@ const MainPage = () => {
         <div id="weatherData"></div>
       </div>
 
-      <div className="flex p-4 sm:p-8 h-fit lg:h-3/5 justify-around w-screen">
+      <div className="flex p-4 sm:p-8 h-fit lg:h-3/5 justify-around">
         <div className="mr-4 sm:mr-8">
             <Link to="/pantai" className="relative"> 
               <img src={pantaiPoster} className="w-full h-full rounded-xl object-cover"/>
@@ -51,7 +51,7 @@ const MainPage = () => {
         <div className="ml-4 sm:ml-8">
           <Link to="/situs-bersejarah" className="relative">
             <img src={tuguPoster} className="w-full h-full object-cover rounded-xl"/>
-            <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-md sm:text-2xl lg:text-5xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full overflow-hidden whitespace-wrap text-ellipsis">SITUS<br/> BERSEJARAH</h1>
+            <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-sm sm:text-lg lg:text-4xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full overflow-hidden whitespace-wrap text-ellipsis">SITUS<br/> BERSEJARAH</h1>
           </Link>
         </div>
       </div>
