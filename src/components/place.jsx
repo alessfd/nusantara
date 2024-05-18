@@ -57,7 +57,11 @@ const SearchPlace = ({ placeId }) => {
 
   console.log(location);
 
-  
+  function ReviewText({ review }) {
+    if (Object.hasOwn(review,"text")) {return <p>{review.text.text}</p>;}
+    return <p>No text was submitted.</p>
+  }
+
 
   return (
     <div className='mx-10 mb-20'>
@@ -93,7 +97,7 @@ const SearchPlace = ({ placeId }) => {
           {reviews.slice(0, 3).map((review, index) => (
             <li key={index} className='border-4 border-orange-100 p-5 mb-2 rounded-lg'>
               <p className='text-xl mb-1 font-bold'>{review.authorAttribution.displayName}</p>
-              {review.text.text}
+              <ReviewText review={review} />
               <p className='font-bold mt-3'>Rating: {review.rating}</p>
             </li>
           ))}

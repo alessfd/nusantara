@@ -44,8 +44,8 @@ const Gunung = () => {
       </div>
 
       <div>
-        <div className="mt-10 mx-10 lg:mx-40 flex justify-start">
-          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
+      <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col lg:flex-row">
+          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
             <CarouselCustomNavigation images={imgBawang} />
           </div>
           <div className="flex flex-col">
@@ -59,7 +59,7 @@ const Gunung = () => {
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-40 flex justify-start">
+        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col-reverse lg:flex-row">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
               <Link to="/info/ChIJG6glHnNyAC4RveqwUbfMgyo" className="flex">
@@ -69,13 +69,13 @@ const Gunung = () => {
             </h1>
             <p className="text-lg">Gunung Bukit Raya dengan puncaknya yang dinamakan Puncak Kakam memiliki ketinggian 2.278 meter diatas permukaan laut. Gunung yang berada didalam Taman Nasional Bukit Baka Bukit Raya ini memiliki puncak yang dinyatakan sebagai titik tertinggi Pulau Kalimantan bagian Indonesia. Gunung ini terletak di dua provinsi yaitu Kalimantan Tengah dan Kalimantan Barat. Meskipun puncak gunungnya berada di wilayan Kalimantan Tengah, akan tetapi jalur pendakian terdekat dan sering digunakan adalah jalur dari Kalimantan Barat.</p>
           </div>
-          <div className="ml-5 max-w-96 min-w-80 max-h-60 min-h-8">
+          <div className="ml-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
             <CarouselCustomNavigation images={imgRaya} />
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start">
-          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
+        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col lg:flex-row">
+          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
             <CarouselCustomNavigation images={imgNiut} />
           </div>
           <div className="flex flex-col">

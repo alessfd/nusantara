@@ -13,9 +13,9 @@ import tuguPoster from "../assets/images/tuguBanner.jpg";
 
 const MainPage = () => {
   return (
-    <div className="main-page h-full mb-40">
-      <div className="relative sm:h-5/6 lg:h-fit inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10 rounded-xl">
-        <div className="sm:h-full lg:h-full">
+    <div className="main-page h-full lg:h-fit">
+      <div className="relative h-4/6 lg:h-fit inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10 rounded-xl">
+        <div className="h-full lg:h-full">
           <img src={banner}
           className="h-full w-full object-cover object-center rounded-xl"
           />
@@ -35,30 +35,26 @@ const MainPage = () => {
         <div id="weatherData"></div>
       </div>
 
-      <div className="flex mt-10 ml-12 h-3/5 justify-center">
-        <Link to="/pantai" className="w-1/3 relative"> 
-          <img src={pantaiPoster} className="w-full h-full rounded-xl object-cover"/>
-          <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-2xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">PANTAI</h1>
-        </Link>
-        <Link to="/gunung" className="w-1/3 mx-8 relative">
-          <img src={gunungPoster} className="w-full h-full object-cover rounded-xl"/>
-          <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-2xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">GUNUNG</h1>
-        </Link>
-        <Link to="/situs-bersejarah" className="w-1/3 mr-12 relative">
-          <img src={tuguPoster} className="w-full h-full object-cover rounded-xl"/>
-          <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-2xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full overflow-hidden whitespace-wrap text-ellipsis">SITUS BERSEJARAH</h1>
-        </Link>
+      <div className="flex p-8 h-fit lg:h-3/5 justify-around w-screen">
+        <div className="mr-8">
+            <Link to="/pantai" className="relative"> 
+              <img src={pantaiPoster} className="w-full h-full rounded-xl object-cover"/>
+              <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-xl sm:text-2xl lg:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">PANTAI</h1>
+            </Link>
+        </div>
+        <div>
+          <Link to="/gunung" className="relative">
+            <img src={gunungPoster} className="w-full h-full object-cover rounded-xl"/>
+            <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-xl sm:text-2xl lg:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">GUNUNG</h1>
+          </Link>
+        </div>
+        <div className="ml-8">
+          <Link to="/situs-bersejarah" className="relative">
+            <img src={tuguPoster} className="w-full h-full object-cover rounded-xl"/>
+            <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-xl sm:text-2xl lg:text-5xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full overflow-hidden whitespace-wrap text-ellipsis">SITUS<br/> BERSEJARAH</h1>
+          </Link>
+        </div>
       </div>
-
-      <div className="mb-20">
-        <div id="map" className="w-full"></div>
-      </div>
-
-      {/* <div className="map-api"></div>
-      <section className="map-section"> */}
-      {/* <MapComponent /> */}
-      {/* </section> */}
-      {/* <footer><BottomNavbar /></footer> */}
     </div>
   );
 };

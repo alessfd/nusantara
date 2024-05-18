@@ -51,8 +51,8 @@ const Pantai = () => {
       </div>
 
       <div>
-        <div className="mt-10 mx-10 lg:mx-40 flex justify-start">
-          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
+        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col lg:flex-row">
+          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-10">
             <CarouselCustomNavigation images={imgBatuNenek} />
           </div>
           <div className="flex flex-col">
@@ -67,7 +67,7 @@ const Pantai = () => {
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-40 flex justify-start">
+        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col-reverse lg:flex-row">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
               <Link to="/info/ChIJ86UKssjX2zERdFRY15fYLvM" className="flex">
@@ -82,13 +82,13 @@ const Pantai = () => {
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start">
+        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col lg:flex-row">
           <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgKura} />
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJSeQn6AD_zC0RhPk7W66aVjQ" className="flex">
+              <Link to="/info/ChIJy0TS2v0K4zERSU_IESXGn6U" className="flex">
                 PANTAI KURA-KURA
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
