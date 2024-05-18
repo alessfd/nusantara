@@ -37,7 +37,7 @@ const Heritage = () => {
           <CarouselBannerCustomNavigation images={imgBanner}/>
         </div>
         <div className="absolute inset-y-1/2 transform -translate-y-8 w-full z-10">
-            <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
+            <h1 className="overflow-hidden whitespace-wrap text-ellipsis text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
               Beauty of<br/>Kalimantan Barat<br/>Heritages
             </h1>
         </div>
