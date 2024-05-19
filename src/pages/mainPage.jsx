@@ -27,31 +27,22 @@ const MainPage = () => {
   }, []);
 
   return (
-    <div className="main-page h-screen lg:h-fit">
-      <Transition
-        show={showBanner}
-        enter="transition-opacity duration-1500"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-1500"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        <div className="relative h-4/6 lg:h-fit inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10 rounded-xl mb-2">
-          <div className="h-full lg:h-full">
-            <img src={banner}
-            className="h-full w-full object-cover object-center rounded-xl"
-            />
-            <div className="absolute top-0 h-full w-full z-10">
-              <div className="flex flex-col justify-center content-center h-full">
-                <div className="h-min">
-                  <h1 className="overflow-hidden whitespace-wrap text-ellipsis text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
-                    <a>Explore the Beauty of Kalimantan Barat</a>
-                  </h1>
-                </div>
+    <div className="main-page h-screen flex flex-col items-center lg:h-fit">
+      <div className="relative h-4/6 lg:h-fit inset-x-1/2 transform -translate-x-1/2 w-11/12 z-10 rounded-xl mb-2">
+        <div className="h-full lg:h-full">
+          <img src={banner}
+          className="h-full w-full object-cover object-center rounded-xl"
+          />
+          <div className="absolute top-0 h-full w-full z-10">
+            <div className="flex flex-col justify-center content-center h-full">
+              <div className="h-min">
+                <h1 className="overflow-hidden whitespace-wrap text-ellipsis text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
+                  <a>Explore the Beauty of Kalimantan Barat</a>
+                </h1>
               </div>
-            </div>        
-          </div>
+              
+            </div>
+          </div>        
         </div>
       </Transition>
 
