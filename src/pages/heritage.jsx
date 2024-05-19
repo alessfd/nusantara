@@ -50,7 +50,7 @@ const Heritage = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJa2AmIklYHS4RfDfcCWMPGTA" className="flex whitespace-pre hover:scale-105">
+              <Link to="/info/ChIJa2AmIklYHS4RfDfcCWMPGTA" className="flex whitespace-pre hover:scale-105 xl:hover:ml-5">
                 KERATON KADRIAH
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
@@ -62,7 +62,7 @@ const Heritage = () => {
         <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col-reverse lg:flex-row">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJhXfCRajH4jERkFlYRZ_tTrw" className="flex whitespace-pre hover:scale-105">
+              <Link to="/info/ChIJhXfCRajH4jERkFlYRZ_tTrw" className="flex whitespace-pre hover:scale-105 xl:hover:ml-5">
                 MAKAM JUANG MANDOR
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1 mr-5"/>
               </Link>
@@ -80,7 +80,7 @@ const Heritage = () => {
           </div>
           <div className="flex flex-col">
           <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJHdQYf1un4jERKKB-pOCSmZU" className="flex whitespace-pre hover:scale-105">
+              <Link to="/info/ChIJHdQYf1un4jERKKB-pOCSmZU" className="flex whitespace-pre hover:scale-105 xl:hover:ml-5">
                 TUGU KHATULISTIWA
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>

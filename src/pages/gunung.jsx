@@ -38,7 +38,7 @@ const Gunung = () => {
         </div>
         <div className="absolute inset-y-1/2 transform -translate-y-8 w-full z-10">
             <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
-              Beauty of <br/>Kalimantan Barat<br/>Mountains
+              Beauty of Kalimantan Barat Mountains
             </h1>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Gunung = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJfbK2kZJI4zER_2Z0sRKaMPU" className="flex hover:scale-105 whitespace-pre">
+              <Link to="/info/ChIJfbK2kZJI4zER_2Z0sRKaMPU" className="flex hover:scale-105 whitespace-pre xl:hover:ml-5">
                 GUNUNG BAWANG
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
@@ -62,7 +62,7 @@ const Gunung = () => {
         <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col-reverse lg:flex-row">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJG6glHnNyAC4RveqwUbfMgyo" className="whitespace-pre flex hover:scale-105">
+              <Link to="/info/ChIJG6glHnNyAC4RveqwUbfMgyo" className="whitespace-pre flex hover:scale-105 xl:hover:ml-5">
                 GUNUNG BUKIT RAYA
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1 mr-5"/>
               </Link>
@@ -80,7 +80,7 @@ const Gunung = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJA6Xpfs6i_DER5xRY5_e97yE" className="flex hover:scale-105 whitespace-pre">
+              <Link to="/info/ChIJA6Xpfs6i_DER5xRY5_e97yE" className="flex hover:scale-105 whitespace-pre xl:hover:ml-5">
                 GUNUNG NIUT
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>

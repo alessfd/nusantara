@@ -57,7 +57,7 @@ const Pantai = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJJZxuhpzK-jER7S7bsrmkJNI" className="flex whitespace-pre hover:scale-105">
+              <Link to="/info/ChIJJZxuhpzK-jER7S7bsrmkJNI" className="flex whitespace-pre hover:scale-105 xl:hover:ml-5">
                 PANTAI BATU NENEK
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
@@ -70,7 +70,7 @@ const Pantai = () => {
         <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col-reverse lg:flex-row">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJ86UKssjX2zERdFRY15fYLvM" className="flex hover:scale-105 whitespace-pre">
+              <Link to="/info/ChIJ86UKssjX2zERdFRY15fYLvM" className="flex hover:scale-105 whitespace-pre xl:hover:ml-5">
                 PANTAI PASIR PANJANG
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1 mr-5"/>
               </Link>
@@ -88,7 +88,7 @@ const Pantai = () => {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJy0TS2v0K4zERSU_IESXGn6U" className="flex whitespace-pre hover:scale-105">
+              <Link to="/info/ChIJy0TS2v0K4zERSU_IESXGn6U" className="flex whitespace-pre hover:scale-105 xl:hover:ml-5">
                 PANTAI KURA-KURA
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
