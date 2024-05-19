@@ -33,7 +33,7 @@ const MainPage = () => {
         <div id="weatherData"></div>
       </div>
 
-      <div className="flex py-4 h-fit lg:h-3/5 justify-around w-11/12">
+      <div className="flex mt-3 sm:mt-4 lg:mt-8 h-fit lg:h-3/5 justify-around w-11/12">
         <div className="mr-4 sm:mr-8 hover:scale-105 transition duration-300">
             <Link to="/pantai" className="relative"> 
               <img src={pantaiPoster} className="w-full h-full rounded-xl object-cover"/>
