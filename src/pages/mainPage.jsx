@@ -34,19 +34,19 @@ const MainPage = () => {
       </div>
 
       <div className="flex p-4 sm:p-8 h-fit lg:h-3/5 justify-around">
-        <div className="mr-4 sm:mr-8 hover:scale-125 lg:hover:scale-110">
+        <div className="mr-4 sm:mr-8 hover:scale-125 lg:hover:scale-110 transition duration-300">
             <Link to="/pantai" className="relative"> 
               <img src={pantaiPoster} className="w-full h-full rounded-xl object-cover"/>
               <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-md md:text-3xl lg:text-4xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">BEACH</h1>
             </Link>
         </div>
-        <div className="hover:scale-125 lg:hover:scale-110">
+        <div className="hover:scale-125 lg:hover:scale-110 transition duration-300">
           <Link to="/gunung" className="relative">
             <img src={gunungPoster} className="w-full h-full object-cover rounded-xl"/>
             <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-md md:text-3xl lg:text-4xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">MOUNTAIN</h1>
           </Link>
         </div>
-        <div className="ml-4 sm:ml-8 hover:scale-125 lg:hover:scale-110">
+        <div className="ml-4 sm:ml-8 hover:scale-125 lg:hover:scale-110 transition duration-300">
           <Link to="/situs-bersejarah" className="relative">
             <img src={tuguPoster} className="w-full h-full object-cover rounded-xl"/>
             <h1 className="select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-md md:text-3xl lg:text-4xl xl:text-6xl tracking-wider font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">HERITAGE</h1>

@@ -39,19 +39,17 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="about-us">
-      <div>
-        <h1 className="text-3xl font-bold text-start ml-10 mb-10">About Us</h1>
-        <div className="flex justify-center flex-wrap">
-          {profiles.map((profile, index) => (
-            <Person key={index} 
-            images={profile.src} 
-            name={profile.name} 
-            nim={profile.nim} 
-            link={profile.link}
-            />
-          ))}
-        </div>
+    <div>
+      <h1 className="text-3xl font-bold text-start ml-10 mb-10">About Us</h1>
+      <div className="flex justify-center flex-wrap">
+        {profiles.map((profile, index) => (
+          <Person key={index} 
+          images={profile.src} 
+          name={profile.name} 
+          nim={profile.nim} 
+          link={profile.link}
+          />
+        ))}
       </div>
     </div>
   );
