@@ -77,7 +77,7 @@ const Pantai = () => {
             </h1>
             <p className="text-lg">Pantai Pasir Panjang menjadi ikon wisata dari kota Singkawang, Kalimantan Barat. Destinasi ini menjadi favorit wisatawan karena berjarak cukup dekat dari pusat kota. Sajian pemandangan laut dan pesisirnya tersaji indah dan menawan. Pasir Pantai Panjang juga menyediakan berbagai fasilitas dan sarana wisata yang lengkap. Objek wisata ini berada dalam komplek wisata terpadu Taman Pasir Panjang Indah. Kawasan wisata tepi laut ini disebut Pantai Pasir Panjang karena memiliki pesisir yang memanjang. Hamparan pasir putihnya yang cantik membentang hingga sepanjang tiga kilometer.</p>
           </div>
-          <div className="ml-5 max-w-96 min-w-80 max-h-60 min-h-8">
+          <div className="lg:ml-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgPanjang} />
           </div>
         </div>

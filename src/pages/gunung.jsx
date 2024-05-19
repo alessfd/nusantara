@@ -37,8 +37,8 @@ const Gunung = () => {
           <CarouselBannerCustomNavigation images={imgBanner}/>
         </div>
         <div className="absolute inset-y-1/2 transform -translate-y-8 w-full z-10">
-            <h1 className="overflow-hidden whitespace-wrap text-ellipsis text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
-              Beauty of Kalimantan Barat Mountains
+            <h1 className="text-center select-none font-banner text-white drop-shadow-banner lg:drop-shadow-bannerlg text-4xl lg:text-5xl xl:text-6xl tracking-wider font-semibold">
+              Beauty of <br/>Kalimantan Barat<br/>Mountains
             </h1>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Gunung = () => {
             </h1>
             <p className="text-lg">Gunung Bukit Raya dengan puncaknya yang dinamakan Puncak Kakam memiliki ketinggian 2.278 meter diatas permukaan laut. Gunung yang berada didalam Taman Nasional Bukit Baka Bukit Raya ini memiliki puncak yang dinyatakan sebagai titik tertinggi Pulau Kalimantan bagian Indonesia. Gunung ini terletak di dua provinsi yaitu Kalimantan Tengah dan Kalimantan Barat. Meskipun puncak gunungnya berada di wilayan Kalimantan Tengah, akan tetapi jalur pendakian terdekat dan sering digunakan adalah jalur dari Kalimantan Barat.</p>
           </div>
-          <div className="ml-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
+          <div className="lg:ml-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
             <CarouselCustomNavigation images={imgRaya} />
           </div>
         </div>

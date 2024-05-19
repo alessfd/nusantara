@@ -44,7 +44,7 @@ const Heritage = () => {
       </div>
 
       <div>
-        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col lg:flex-row">
+        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex lg:justify-start flex-col lg:flex-row">
           <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgKeraton} />
           </div>
@@ -69,7 +69,7 @@ const Heritage = () => {
             </h1>
             <p className="text-lg">Makam Juang Mandor merupakan salah satu situs bersejarah di kecamatan Mandor, Kabupaten Landak, Kalimantan Barat, Indonesia. Makam ini dahulu digunakan sebagai tempat pembantaian ± 21.037 orang oleh tentara Jepang pada tahun 1943 hingga 1944. Peristiwa pembantaian ini kemudian dikenal dengan istilah Tragedi Mandor Berdarah atau Peristiwa Mandor. Makam Juang Mandor berlokasi di Dusun Mandor, Desa Mandor, Kecamatan Mandor, Kabupaten Landak, Kalimantan Barat. Terletak 88 kilometer dari Kota Pontianak dan dapat ditempuh dengan menggunakan kendaraan roda dua maupun roda empat.</p>
           </div>
-          <div className="ml-5 mb-10 max-w-96 min-w-80 max-h-60 min-h-8">
+          <div className="lg:ml-5 mb-10 max-w-96 min-w-80 max-h-60 min-h-8 mb-5 lg:mb-0">
             <CarouselCustomNavigation images={imgMakam} />
           </div>
         </div>
