@@ -43,8 +43,8 @@ const Gunung = () => {
         </div>
       </div>
 
-      <div>
-      <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col lg:flex-row">
+    <div className="flex flex-col w-full items-center px-16">
+      <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
           <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
             <CarouselCustomNavigation images={imgBawang} />
           </div>
@@ -59,7 +59,7 @@ const Gunung = () => {
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col-reverse lg:flex-row">
+        <div className="mt-10 mb-10 flex justify-start flex-col-reverse lg:flex-row max-w-6xl">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
               <Link to="/info/ChIJG6glHnNyAC4RveqwUbfMgyo" className="whitespace-pre flex hover:scale-105 xl:hover:ml-5">
@@ -74,7 +74,7 @@ const Gunung = () => {
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col lg:flex-row">
+        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
           <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
             <CarouselCustomNavigation images={imgNiut} />
           </div>

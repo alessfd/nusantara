@@ -43,8 +43,8 @@ const Heritage = () => {
         </div>
       </div>
 
-      <div>
-        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex lg:justify-start flex-col lg:flex-row">
+      <div className="flex flex-col w-full items-center px-16">
+        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
           <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgKeraton} />
           </div>
@@ -59,7 +59,7 @@ const Heritage = () => {
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col-reverse lg:flex-row">
+        <div className="mt-10 mb-10 flex justify-start flex-col-reverse lg:flex-row max-w-6xl">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
               <Link to="/info/ChIJhXfCRajH4jERkFlYRZ_tTrw" className="flex whitespace-pre hover:scale-105 xl:hover:ml-5">
@@ -69,12 +69,12 @@ const Heritage = () => {
             </h1>
             <p className="text-lg text-justify">Makam Juang Mandor merupakan salah satu situs bersejarah di kecamatan Mandor, Kabupaten Landak, Kalimantan Barat, Indonesia. Makam ini dahulu digunakan sebagai tempat pembantaian ± 21.037 orang oleh tentara Jepang pada tahun 1943 hingga 1944. Peristiwa pembantaian ini kemudian dikenal dengan istilah Tragedi Mandor Berdarah atau Peristiwa Mandor. Makam Juang Mandor berlokasi di Dusun Mandor, Desa Mandor, Kecamatan Mandor, Kabupaten Landak, Kalimantan Barat. Terletak 88 kilometer dari Kota Pontianak dan dapat ditempuh dengan menggunakan kendaraan roda dua maupun roda empat.</p>
           </div>
-          <div className="lg:ml-5 mb-10 max-w-96 min-w-80 max-h-60 min-h-8 mb-5 lg:mb-0">
+          <div className="lg:ml-5 max-w-96 min-w-80 max-h-60 min-h-8 overflow-hidden">
             <CarouselCustomNavigation images={imgMakam} />
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col lg:flex-row">
+        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
           <div className="mr-5 max-w-96 min-w-80 mb-10 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgTugu} />
           </div>

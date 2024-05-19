@@ -62,6 +62,10 @@ const SearchPlace = ({ placeId }) => {
     return <p>No text was submitted.</p>
   }
 
+  const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+
+  const reviewsRandom = shuffle(reviews);
+
 
   return (
     <div className='mx-10 mb-20'>
@@ -71,13 +75,13 @@ const SearchPlace = ({ placeId }) => {
         src={`https://places.googleapis.com/v1/${photos[0].name}/media?maxHeightPx=400&maxWidthPx=400&key=${API_KEY}`}
         className='rounded-xl w-full lg:w-1/2 mr-5 mb-5 lg:w-2/5 lg:mr-10'
         />
-        <div className='flex flex-col text-lg lg:text-xl mb-4'>
-          <p className='whitespace-pre text-bold'>Address:</p>
+        <div className='flex flex-col justify-center text-lg lg:text-xl mb-4'>
+          <p className='whitespace-pre font-bold'>Address:</p>
           <p className='mb-3 overflow-hidden whitespace-wrap text-ellipsis'>{formattedAddress}</p>
-          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    Temperature: {main.temp} °C</p>
-          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    Weather Condition: {weather[0].main}</p>
-          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    Humidity: {main.humidity}%</p>
-          <p className='overflow-hidden whitespace-wrap text-ellipsis'>    Wind Speed: {wind.speed} m/s</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    <b>Temperature:</b> {main.temp} °C</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    <b>Weather Condition:</b> {weather[0].main}</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis mb-0.5'>    <b>Humidity:</b> {main.humidity}%</p>
+          <p className='overflow-hidden whitespace-wrap text-ellipsis'>    <b>Wind Speed:</b> {wind.speed} m/s</p>
         </div>
       </div>
 
@@ -94,11 +98,11 @@ const SearchPlace = ({ placeId }) => {
       <div>
         <h3 className='text-xl font-bold'>Reviews</h3>
         <ul>
-          {reviews.slice(0, 3).map((review, index) => (
+          {reviewsRandom.slice(0, 3).map((review, index) => (
             <li key={index} className='border-4 border-orange-100 p-5 mb-2 rounded-lg'>
               <p className='text-xl mb-1 font-bold'>{review.authorAttribution.displayName}</p>
               <ReviewText review={review} />
-              <p className='font-bold mt-3'>Rating: {review.rating}</p>
+              <p className='font-bold mt-3'>Rating: {review.rating}/5</p>
             </li>
           ))}
         </ul>
