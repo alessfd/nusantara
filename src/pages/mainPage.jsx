@@ -27,7 +27,7 @@ const MainPage = () => {
   }, []);
 
   return (
-    <div className="main-page h-screen flex flex-col items-center lg:h-fit">
+    <div className="main-page h-screen items-center lg:h-fit">
       <Transition
         show={showBanner}
         enter="transition-opacity duration-1500"

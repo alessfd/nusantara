@@ -75,7 +75,7 @@ const Gunung = () => {
         </div>
 
         <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
-        <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-4">
+        <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-12">
             <CarouselCustomNavigation images={imgNiut} />
           </div>
           <div className="flex flex-col">
