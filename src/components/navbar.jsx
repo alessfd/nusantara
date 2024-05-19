@@ -139,7 +139,7 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <CustomLink to="/about-us" className="-ml-3 pl-4 text-sm font-semibold leading-6 text-gray-900">
+          <CustomLink to="/about-us" className="-ml-5 pl-5 text-sm font-semibold leading-6 text-gray-900">
             About Us
           </CustomLink>
         </Popover.Group>

@@ -1058,6 +1058,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.-ml-5 {
+  margin-left: -1.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2846,6 +2850,10 @@ video {
 
 .pt-px {
   padding-top: 1px;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .text-left {
