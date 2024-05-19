@@ -38,9 +38,9 @@ const Pantai = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full items-center px-16">
+    <div className="flex flex-col w-full items-center">
       <div className="relative">
-        <div className="text-overlay h-52 md:h-96  w-full">
+        <div className="text-overlay h-52 md:h-96 w-screen">
           <CarouselBannerCustomNavigation images={imgBanner}/>
         </div>
         <div className="absolute inset-y-1/2 transform -translate-y-8 w-full z-10">
