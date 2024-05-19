@@ -1,10 +1,6 @@
 import React from "react";
 import Person from "../components/person";
 import "../styles.css";
-import red from "../assets/profil/red.webp";
-import blue from "../assets/profil/blue.webp";
-import black from "../assets/profil/black.webp";
-import pink from "../assets/profil/pink.webp";
 import ales from "../assets/profil/ales.jpeg";
 import jim from "../assets/profil/jimmy.jpeg";
 import varrel from "../assets/profil/varrel.jpeg";

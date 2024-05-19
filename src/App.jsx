@@ -8,7 +8,6 @@ import Heritage from './pages/heritage';
 import Info from './pages/info';
 import { Route, Routes } from "react-router-dom";
 import Copyright from './components/copyright';
-// import './App.css'
 import './index.css'
 
 function App() {
