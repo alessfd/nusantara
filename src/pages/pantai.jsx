@@ -51,13 +51,13 @@ const Pantai = () => {
       </div>
 
       <div>
-        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col lg:flex-row">
-          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-10">
+        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col lg:flex-row">
+          <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-12">
             <CarouselCustomNavigation images={imgBatuNenek} />
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJJZxuhpzK-jER7S7bsrmkJNI" className="flex">
+              <Link to="/info/ChIJJZxuhpzK-jER7S7bsrmkJNI" className="flex whitespace-pre hover:scale-105">
                 PANTAI BATU NENEK
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>
@@ -67,28 +67,28 @@ const Pantai = () => {
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col-reverse lg:flex-row">
+        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col-reverse lg:flex-row">
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJ86UKssjX2zERdFRY15fYLvM" className="flex">
+              <Link to="/info/ChIJ86UKssjX2zERdFRY15fYLvM" className="flex hover:scale-105 whitespace-pre">
                 PANTAI PASIR PANJANG
-                <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
+                <img src={linkLogo} className="w-10 -mt-0.5 -ml-1 mr-5"/>
               </Link>
             </h1>
             <p className="text-lg">Pantai Pasir Panjang menjadi ikon wisata dari kota Singkawang, Kalimantan Barat. Destinasi ini menjadi favorit wisatawan karena berjarak cukup dekat dari pusat kota. Sajian pemandangan laut dan pesisirnya tersaji indah dan menawan. Pasir Pantai Panjang juga menyediakan berbagai fasilitas dan sarana wisata yang lengkap. Objek wisata ini berada dalam komplek wisata terpadu Taman Pasir Panjang Indah. Kawasan wisata tepi laut ini disebut Pantai Pasir Panjang karena memiliki pesisir yang memanjang. Hamparan pasir putihnya yang cantik membentang hingga sepanjang tiga kilometer.</p>
           </div>
-          <div className="lg:ml-5 max-w-96 min-w-80 max-h-60 min-h-8">
+          <div className="lg:ml-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-8">
             <CarouselCustomNavigation images={imgPanjang} />
           </div>
         </div>
 
-        <div className="mt-10 mx-10 lg:mx-40 mb-20 flex justify-start flex-col lg:flex-row">
+        <div className="mt-10 mx-10 lg:mx-32 mb-20 flex justify-start flex-col lg:flex-row">
           <div className="mr-5 max-w-96 min-w-80 max-h-60 min-h-8">
             <CarouselCustomNavigation images={imgKura} />
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold text-3xl mb-2">
-              <Link to="/info/ChIJy0TS2v0K4zERSU_IESXGn6U" className="flex">
+              <Link to="/info/ChIJy0TS2v0K4zERSU_IESXGn6U" className="flex whitespace-pre hover:scale-105">
                 PANTAI KURA-KURA
                 <img src={linkLogo} className="w-10 -mt-0.5 -ml-1"/>
               </Link>

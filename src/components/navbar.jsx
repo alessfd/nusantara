@@ -29,7 +29,7 @@ function CustomLink({ to, children, ...props }) {
   const isActive = useMatch({path: resolvedPath.pathname, end: true });
 
   return (
-  <span className={(isActive ? "bg-lime-50 px-2 py-1 -mx-2 -my-1 rounded-lg" : "")}>
+  <span className={(isActive ? "bg-lime-50 px-2 py-1 -mx-2 -my-1 rounded-lg" : "flex items-center px-2 py-1 -mx-2 -my-1 rounded-lg gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:bg-lime-50")}>
     <Link to={to} {...props}>
       {children}
     </Link>
@@ -59,7 +59,7 @@ function CustomWisata({ to, children, ...props }) {
   
 
   return (
-    <span className={(isActive ? "flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 bg-lime-50 px-2 py-1 -mx-2 -my-1 rounded-lg" : "flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900")}>
+    <span className={(isActive ? "flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 bg-lime-50 px-2 py-1 -mx-2 -my-1 rounded-lg" : "flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:bg-lime-50 px-2 py-1 -mx-2 -my-1 rounded-lg")}>
         {children}
     </span>
   );
@@ -103,7 +103,7 @@ export default function Navbar() {
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               <CustomWisata>
                 Wisata
-                <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400"    aria-hidden="true" /> 
+                <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" /> 
               </CustomWisata>
             </Popover.Button>
 
@@ -139,7 +139,7 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <CustomLink to="/about-us" className="text-sm font-semibold leading-6 text-gray-900">
+          <CustomLink to="/about-us" className="-ml-3 pl-4 text-sm font-semibold leading-6 text-gray-900">
             About Us
           </CustomLink>
         </Popover.Group>
