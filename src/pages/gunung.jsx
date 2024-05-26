@@ -33,7 +33,7 @@ const Gunung = () => {
   return (
     <div className="flex flex-col w-full items-center">
       <div className="relative">
-      <div className="text-overlay h-52 md:h-96 w-screen">
+        <div className="text-overlay h-52 md:h-96 w-screen">
           <CarouselBannerCustomNavigation images={imgBanner}/>
         </div>
         <div className="absolute inset-y-1/2 transform -translate-y-8 w-full z-10">
@@ -43,13 +43,13 @@ const Gunung = () => {
         </div>
       </div>
 
-    <div className="flex flex-col w-full items-center px-16">
-      <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
-      <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-">
+      <div className="flex flex-col w-full items-center px-16">
+        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-96 lg:max-w-6xl">
+          <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-12">
             <CarouselCustomNavigation images={imgBawang} />
           </div>
           <div className="flex flex-col">
-          <h1 className="font-bold text-3xl mb-2 w-min">
+            <h1 className="font-bold text-3xl mb-2 w-min">
               <Link to="/info/ChIJfbK2kZJI4zER_2Z0sRKaMPU" className="flex whitespace-pre hover:text-blue-900">
                 GUNUNG BAWANG
                 <img src={linkLogo} className="w-10"/>
@@ -59,9 +59,9 @@ const Gunung = () => {
           </div>
         </div>
 
-        <div className="mt-10 mb-10 flex justify-start flex-col-reverse lg:flex-row max-w-6xl">
+        <div className="mt-10 mb-10 flex justify-start items-center flex-col-reverse lg:flex-row max-w-96 lg:max-w-6xl">
           <div className="flex flex-col">
-          <h1 className="font-bold text-3xl mb-2 w-min">
+            <h1 className="font-bold text-3xl mb-2 w-min">
               <Link to="/info/ChIJG6glHnNyAC4RveqwUbfMgyo" className="whitespace-pre flex hover:text-blue-900">
                 GUNUNG BUKIT RAYA
                 <img src={linkLogo} className="w-10"/>
@@ -69,17 +69,17 @@ const Gunung = () => {
             </h1>
             <p className="text-lg text-justify">Gunung Bukit Raya dengan puncaknya yang dinamakan Puncak Kakam memiliki ketinggian 2.278 meter diatas permukaan laut. Gunung yang berada didalam Taman Nasional Bukit Baka Bukit Raya ini memiliki puncak yang dinyatakan sebagai titik tertinggi Pulau Kalimantan bagian Indonesia. Gunung ini terletak di dua provinsi yaitu Kalimantan Tengah dan Kalimantan Barat. Meskipun puncak gunungnya berada di wilayan Kalimantan Tengah, akan tetapi jalur pendakian terdekat dan sering digunakan adalah jalur dari Kalimantan Barat.</p>
           </div>
-          <div className="lg:ml-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-4">
+          <div className="lg:ml-5 w-96 min-w-80 max-h-60 mb-12">
             <CarouselCustomNavigation images={imgRaya} />
           </div>
         </div>
 
-        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
-        <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-12">
+        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-96 lg:max-w-6xl">
+          <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-12">
             <CarouselCustomNavigation images={imgNiut} />
           </div>
           <div className="flex flex-col">
-          <h1 className="font-bold text-3xl mb-2 w-min">
+            <h1 className="font-bold text-3xl mb-2 w-min">
               <Link to="/info/ChIJA6Xpfs6i_DER5xRY5_e97yE" className="flex whitespace-pre hover:text-blue-900">
                 GUNUNG NIUT
                 <img src={linkLogo} className="w-10"/>

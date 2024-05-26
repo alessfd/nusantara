@@ -38,19 +38,27 @@ const AboutUs = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold text-start ml-10 mb-10">About Us</h1>
-      <div className="flex justify-center flex-wrap">
-        {profiles.map((profile, index) => (
-          <Person key={index} 
-          images={profile.src} 
-          name={profile.name} 
-          nim={profile.nim} 
-          link={profile.link}
-          />
-        ))}
+      <div className="flex justify-center w-full mb-12">
+        <div className="flex justify-center flex-wrap w-4/5 lg:w-2/3 xl:w-1/2 2xl:w-fit">
+          {profiles.map((profile, index) => (
+            <Person key={index} 
+            images={profile.src} 
+            name={profile.name} 
+            nim={profile.nim} 
+            link={profile.link}
+            />
+          ))}
+        </div>
       </div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNnDKGJmRYKzjQAa4sdxDc8xMe5YEOy4CwohRwfQ_MBqRZsA/viewform" target="blank" className="flex justify-center">
-        <img src={qr} className="w-1/4 hover:scale-110"/>
-      </a>
+      <div className="flex flex-col">
+        <h1 className="text-3xl font-bold text-center mb-4">QR Penilaian</h1>
+        <div className="flex justify-center">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNnDKGJmRYKzjQAa4sdxDc8xMe5YEOy4CwohRwfQ_MBqRZsA/viewform" target="blank" className="flex justify-center w-1/4">
+            <img src={qr} className="border-2 rounded-3xl hover:scale-105"/>
+          </a>
+        </div>
+      </div>
+      
     </div>
   );
 };

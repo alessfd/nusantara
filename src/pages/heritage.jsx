@@ -44,13 +44,13 @@ const Heritage = () => {
       </div>
 
       <div className="flex flex-col w-full items-center px-16">
-        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
-        <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-">
+        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-96 lg:max-w-6xl">
+          <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-12">
             <CarouselCustomNavigation images={imgKeraton} />
-          </div>
+            </div>
           <div className="flex flex-col">
-          <h1 className="font-bold text-3xl mb-2 w-min">
-              <Link to="/info/ChIJa2AmIklYHS4RfDfcCWMPGTA" className="flex whitespace-pre hover:text-blue-900">
+            <h1 className="font-bold text-3xl mb-2 w-min">
+              <Link to="/info/ChIJfbK2kZJI4zER_2Z0sRKaMPU" className="flex whitespace-pre hover:text-blue-900">
                 KERATON KADRIAH
                 <img src={linkLogo} className="w-10"/>
               </Link>
@@ -59,27 +59,27 @@ const Heritage = () => {
           </div>
         </div>
 
-        <div className="mt-10 mb-10 flex justify-start flex-col-reverse lg:flex-row max-w-6xl">
+        <div className="mt-10 mb-10 flex justify-start items-center flex-col-reverse lg:flex-row max-w-96 lg:max-w-6xl">
           <div className="flex flex-col">
-          <h1 className="font-bold text-3xl mb-2 w-min">
-              <Link to="/info/ChIJhXfCRajH4jERkFlYRZ_tTrw" className="flex whitespace-pre hover:text-blue-900">
+            <h1 className="font-bold text-3xl mb-2 w-min">
+              <Link to="/info/ChIJG6glHnNyAC4RveqwUbfMgyo" className="whitespace-pre flex hover:text-blue-900">
                 MAKAM JUANG MANDOR
                 <img src={linkLogo} className="w-10"/>
               </Link>
             </h1>
             <p className="text-lg text-justify">Makam Juang Mandor merupakan salah satu situs bersejarah di kecamatan Mandor, Kabupaten Landak, Kalimantan Barat, Indonesia. Makam ini dahulu digunakan sebagai tempat pembantaian ± 21.037 orang oleh tentara Jepang pada tahun 1943 hingga 1944. Peristiwa pembantaian ini kemudian dikenal dengan istilah Tragedi Mandor Berdarah atau Peristiwa Mandor. Makam Juang Mandor berlokasi di Dusun Mandor, Desa Mandor, Kecamatan Mandor, Kabupaten Landak, Kalimantan Barat. Terletak 88 kilometer dari Kota Pontianak dan dapat ditempuh dengan menggunakan kendaraan roda dua maupun roda empat.</p>
           </div>
-          <div className="lg:ml-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-4">
+          <div className="lg:ml-5 w-96 min-w-80 max-h-60 mb-12">
             <CarouselCustomNavigation images={imgMakam} />
           </div>
         </div>
 
-        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-6xl">
-        <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-4">
+        <div className="mt-10 mb-10 flex justify-start flex-col lg:flex-row max-w-96 lg:max-w-6xl">
+          <div className="lg:mr-5 max-w-96 min-w-80 max-h-60 min-h-8 mb-12">
             <CarouselCustomNavigation images={imgTugu} />
           </div>
           <div className="flex flex-col">
-          <h1 className="font-bold text-3xl mb-2 w-min">
+            <h1 className="font-bold text-3xl mb-2 w-min">
               <Link to="/info/ChIJHdQYf1un4jERKKB-pOCSmZU" className="flex whitespace-pre hover:text-blue-900">
                 TUGU KHATULISTIWA
                 <img src={linkLogo} className="w-10"/>
