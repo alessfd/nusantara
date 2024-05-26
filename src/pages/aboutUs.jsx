@@ -1,14 +1,11 @@
 import React from "react";
 import Person from "../components/person";
 import "../styles.css";
-import red from "../assets/profil/red.webp";
-import blue from "../assets/profil/blue.webp";
-import black from "../assets/profil/black.webp";
-import pink from "../assets/profil/pink.webp";
 import ales from "../assets/profil/ales.jpeg";
 import jim from "../assets/profil/jimmy.jpeg";
 import varrel from "../assets/profil/varrel.jpeg";
 import sam from "../assets/profil/samuel.jpeg";
+import qr from "../assets/images/qr.jpeg";
 
 const AboutUs = () => {
   const profiles = [
@@ -51,6 +48,9 @@ const AboutUs = () => {
           />
         ))}
       </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNnDKGJmRYKzjQAa4sdxDc8xMe5YEOy4CwohRwfQ_MBqRZsA/viewform" target="blank" className="flex justify-center">
+        <img src={qr} className="w-1/4 hover:scale-110"/>
+      </a>
     </div>
   );
 };
